@@ -1,0 +1,39 @@
+services:
+  back:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    environment:
+      DATABASE_HOST: ${DATABASE_HOST:-db}
+      DATABASE_PORT: ${DATABASE_PORT:-5432}
+      DATABASE_USER: ${DATABASE_USER:-postgres}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-postgres}
+      DATABASE_NAME: ${DATABASE_NAME:-user_db}
+    depends_on:
+      - db
+    command: npm run start:dev # Or start:prod for production build
+
+  back-production:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    environment:
+      DATABASE_HOST: ${DATABASE_HOST:-db}
+      DATABASE_PORT: ${DATABASE_PORT:-5432}
+      DATABASE_USER: ${DATABASE_USER:-postgres}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-postgres}
+      DATABASE_NAME: ${DATABASE_NAME:-user_db}
+
+  db:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_USER: ${DATABASE_USER:-postgres}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-postgres}
+      POSTGRES_DB: ${DATABASE_NAME:-user_db}
+    volumes:
+      - vr_pg_data:/var/lib/postgresql/data
+
+volumes:
+  vr_pg_data:
