@@ -1,4 +1,10 @@
-import { PartialType } from '@nestjs/mapped-types';
-import { CreateUserDto } from './create-user.dto';
+import { DTO, DTOProperty } from '../../core/lib/typebox-dto';
 
-export class UpdateUserDto extends PartialType(CreateUserDto) {}
+@DTO()
+export class UpdateUserDto {
+  @DTOProperty()
+  name!: string;
+
+  @DTOProperty()
+  age!: number;
+}

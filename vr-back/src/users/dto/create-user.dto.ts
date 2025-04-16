@@ -1,15 +1,10 @@
-import { Type, Static } from '@sinclair/typebox';
+import { DTO, DTOProperty } from '../../core/lib/typebox-dto';
 
-const T = Type.Object({
-  x: Type.Number(),
-  y: Type.Number(),
-  z: Type.Number(),
-});
+@DTO()
+export class CreateUserDto {
+  @DTOProperty()
+  public email!: string;
 
-type CreateUserDtoType = Static<typeof T>;
-
-export class CreateUserDto implements CreateUserDtoType {
-  x!: number;
-  y!: number;
-  z!: number;
+  @DTOProperty()
+  public password!: string;
 }

@@ -1,7 +1,7 @@
 services:
   back:
     build:
-      context: .
+      context: ./vr-back
       dockerfile: Dockerfile
       target: development
     environment:
@@ -10,13 +10,15 @@ services:
       DATABASE_USER: ${DATABASE_USER:-postgres}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD:-postgres}
       DATABASE_NAME: ${DATABASE_NAME:-user_db}
+    volumes:
+      - ./vr-back/src:/home/node/app/src
     depends_on:
       - db
     command: npm run start:dev # Or start:prod for production build
 
   back-production:
     build:
-      context: .
+      context: ./vr-back
       dockerfile: Dockerfile
       target: production
     environment:
