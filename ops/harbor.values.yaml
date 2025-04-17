@@ -1,0 +1,40 @@
+# harbor-values.yaml (MINIMAL EXAMPLE - REVIEW FULL VALUES)
+expose:
+  type: clusterIP # Start with internal access; change to ingress or loadBalancer later
+  tls:
+    enabled: false # Simplest start; ENABLE TLS FOR PRODUCTION
+# externalURL: http://harbor.local # Needs to be resolvable - adjust type/tls based on this
+externalURL: http://master # Needs to be resolvable - adjust type/tls based on this
+harborAdminPassword: YourAdminPassword # SET THIS SECURELY!
+
+persistence:
+  enabled: true
+  # resourcePolicy: keep # Optional: Keep PVCs if Helm release is deleted
+  # imageChartStorage, database, jobservice, redis, trivy sections likely exist
+  # Check defaults or configure storageClass/size for each component as needed
+  # Example for registry storage:
+  registry:
+    persistence:
+      # storageClass: "local-path"
+      size: 10Gi # Harbor needs more space than basic registry
+  database:
+    persistence:
+      # storageClass: "local-path"
+      size: 5Gi
+  redis:
+    persistence:
+      # storageClass: "local-path"
+      size: 1Gi
+  jobservice:
+    persistence:
+      # storageClass: "local-path"
+      size: 1Gi
+  # etc. for trivy if enabled...
+
+# Disable components for minimal setup if desired (Check defaults first!)
+# notary:
+#   enabled: false
+# trivy:
+#  enabled: false
+# chartmuseum:
+#   enabled: false

@@ -181,6 +181,103 @@ kafka-console-consumer.sh \
 There are "resources" sections in the chart not set.
 Using "resourcesPreset" is not recommended for production.
 For production installations, please set the following values according to your workload needs:
-- controller.resources
-- defaultInitContainers.prepareConfig.resources
+- `controller.resources`
+- `defaultInitContainers.prepareConfig.resources`
   +info https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+
+
+## Install harbor
+
+*Client Configuration*:
+Configure *k3s* nodes `/etc/rancher/k3s/registries.yaml` to trust the registry address
+(e.g., http://my-harbor-harbor-portal.harbor.svc.cluster.local).
+Remember to use the correct service name and port,
+and http since TLS was disabled in the example.
+Restart k3s.
+
+
+```bash
+kubectl create namespace harbor
+
+# https://github.com/goharbor/harbor-helm
+helm repo add harbor https://helm.goharbor.io
+helm install my-release harbor/harbor -n harbor
+
+# helm install my-harbor bitnami/harbor \
+#   --namespace harbor \
+#   --values ops/harbor.values.yaml
+  
+# AFAIU, in prev pg/kafka examples we use `--set` instead of `--values` to set "values"
+#
+# helm install my-harbor bitnami/docker-registry \
+#   --namespace docker-registry \
+#   --set persistence.enabled=true \
+#   --set persistence.size=8Gi
+# # Add settings for authentication, external access, listeners etc. as needed
+
+# Wait for all pods to be ready
+kubectl get pods -n harbor -w
+# Check services (look for portal, core, registry services etc.)
+kubectl get svc -n harbor
+# Check PVCs
+kubectl get pvc -n harbor
+```
+
+Find the service exposing the Harbor UI/API (often named like `my-harbor-harbor-portal` or `my-harbor-harbor-nginx`)
+and note its *ClusterIP* and port (usually `80` or `443` internally mapping to container ports).
+Let's assume it's `my-harbor-harbor-portal.harbor.svc.cluster.local` on port `80` for the next step.
+
+Similar to before, edit `/etc/rancher/k3s/registries.yaml` on each k3s node.
+Use the internal service name and port you found in paragraph above.
+Since we used http in *externalURL* and *disabled TLS* in the *expose* section for this example,
+configure it as an HTTP endpoint.
+
+```yaml
+# /etc/rancher/k3s/registries.yaml
+mirrors:
+  # Use the internal ClusterIP service name and port for Harbor's registry component
+  # NOTE: Harbor often exposes the UI/API via one service (e.g., portal/nginx)
+  # and the actual registry V2 API via another (e.g., harbor-registry) OR
+  # proxies registry traffic via the main portal/nginx service.
+  # You might need to use the main portal service name here. Let's assume it proxies.
+  "my-harbor.internal": # Using the externalURL hostname might be needed for Harbor
+    endpoint:
+      - http://my-harbor-harbor-portal.harbor.svc.cluster.local # Adjust service name if needed
+configs:
+  "my-harbor.internal": # Add config section for insecure / self-signed TLS later
+    auth: # Optional: Can add credentials here too
+      username: admin
+      password: YourAdminPassword # Defined during install
+    tls:
+       insecure_skip_verify: true # Needed if registry is HTTP
+```
+
+**Important:**
+*Harbor* might require you to use the *externalURL hostname* (`my-harbor.internal` in this example)
+for `login/push/pull`, even internally..
+Ensure this hostname is resolvable from your nodes
+(you might need to add it to `/etc/hosts` on each node pointing to the ClusterIP
+of the Harbor portal service if cluster DNS isn't resolving it automatically).
+Using the service name directly might also work - check Harbor/Bitnami docs.
+Restart *k3s* on each node after modifying the file.
+
+```bash
+# You'll likely need to log in first.
+
+# Use the externalURL hostname and admin credentials
+REGISTRY_HOST="my-harbor.internal"
+ADMIN_USER="admin"
+ADMIN_PASS="YourAdminPassword" # The password you set during install
+
+# Login (use --plain-http since TLS is off)
+sudo ctr images login --plain-http -u $ADMIN_USER -p $ADMIN_PASS $REGISTRY_HOST
+
+# Pull, Tag, Push
+sudo ctr images pull docker.io/library/busybox:latest
+sudo ctr images tag docker.io/library/busybox:latest $REGISTRY_HOST/library/busybox:v1 # Harbor uses projects, 'library' is often default
+sudo ctr images push --plain-http $REGISTRY_HOST/library/busybox:v1
+
+# Test pull
+sudo ctr images remove $REGISTRY_HOST/library/busybox:v1
+sudo ctr images pull --plain-http $REGISTRY_HOST/library/busybox:v1
+```
