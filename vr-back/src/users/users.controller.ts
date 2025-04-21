@@ -10,7 +10,6 @@ import {
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-import { validate } from '../core/lib/typebox-dto';
 
 @Controller('users')
 export class UsersController {
@@ -18,11 +17,6 @@ export class UsersController {
 
   @Post()
   create(@Body() body: CreateUserDto) {
-    console.log(body, body.constructor);
-
-    const result = validate(body, CreateUserDto);
-    console.log([...result]);
-
     return this.usersService.create(body);
   }
 
@@ -33,7 +27,7 @@ export class UsersController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.usersService.findOne(+id);
+    return this.usersService.findOne({ id });
   }
 
   @Patch(':id')

@@ -14,7 +14,7 @@ CMD ["node", "dist/src/main"]
 
 FROM node:23-bookworm-slim as development
 
-RUN apt update && apt install -y iproute2 \
+RUN apt update && apt install -y iproute2 procps \
   && rm -rf /var/lib/apt/lists/*
 
 USER node

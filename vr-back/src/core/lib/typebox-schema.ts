@@ -2,6 +2,8 @@ import 'reflect-metadata';
 import * as box from '@sinclair/typebox';
 import { TypeCheck, TypeCompiler } from '@sinclair/typebox/compiler';
 import { Type } from '@nestjs/common';
+import { FormatRegistry } from '@sinclair/typebox';
+import { isEmail, isStrongPassword, isUUID } from 'validator';
 
 /**
  * https://docs.nestjs.com/controllers#request-payloads
@@ -22,7 +24,14 @@ export const compiledSchemas: Map<Type, TypeCheck<any>> = new Map();
 
 const SIMPLE_TYPES = ['Symbol', 'String', 'Number', 'Date', 'Boolean'];
 
-export function validate(object: unknown, dtoClass: Type) {
+FormatRegistry.Set('email', isEmail);
+// TODO: make this setting more explicit for project
+FormatRegistry.Set('password', (value) =>
+  isStrongPassword(value, { minSymbols: 0 }),
+);
+FormatRegistry.Set('uuid', isUUID);
+
+export function validate(dtoClass: Type, object: unknown) {
   const boxSchema = Reflect.getMetadata(TYPEBOX_SCHEMA, dtoClass) as
     | box.TObject<box.TProperties>
     | undefined;
@@ -41,7 +50,7 @@ export function validate(object: unknown, dtoClass: Type) {
   return validator.Errors(object);
 }
 
-export function DTO() {
+export function TSchema(opts?: box.ObjectOptions) {
   return function defineTypeboxDTO(target: Type) {
     const dtoObjectValidator = Reflect.getMetadata(
       TYPEBOX_PROPERTIES,
@@ -52,15 +61,15 @@ export function DTO() {
       return;
     }
 
-    Reflect.defineMetadata(
-      TYPEBOX_SCHEMA,
-      box.Type.Object(dtoObjectValidator),
-      target,
-    );
+    const schema = opts
+      ? box.Type.Object(dtoObjectValidator, opts)
+      : box.Type.Object(dtoObjectValidator);
+
+    Reflect.defineMetadata(TYPEBOX_SCHEMA, schema, target);
   };
 }
 
-export function DTOProperty(validator?: box.TSchema) {
+export function TProperty(validator?: box.TSchema) {
   return function defineTypeboxDTOProperty(
     prototype: object,
     propertyName: string | symbol,

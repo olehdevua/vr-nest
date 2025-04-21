@@ -5,16 +5,21 @@ services:
       dockerfile: Dockerfile
       target: development
     environment:
-      DATABASE_HOST: ${DATABASE_HOST:-db}
+      DATABASE_HOST: ${DATABASE_HOST:-postgres}
       DATABASE_PORT: ${DATABASE_PORT:-5432}
-      DATABASE_USER: ${DATABASE_USER:-postgres}
-      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-postgres}
-      DATABASE_NAME: ${DATABASE_NAME:-user_db}
+      DATABASE_USER: ${DATABASE_USER:-vr}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-deadbeef}
+      DATABASE_NAME: ${DATABASE_NAME:-vr}
+      PINO_LOGGER_PRETTY: true
+      PINO_LOGGER_LEVEL: 'info'
     volumes:
       - ./vr-back/src:/home/node/app/src
     depends_on:
-      - db
+      - postgres
     command: npm run start:dev # Or start:prod for production build
+    networks:
+      vr:
+        ipv4_address: 10.22.10.1
 
   back-production:
     build:
@@ -22,20 +27,44 @@ services:
       dockerfile: Dockerfile
       target: production
     environment:
-      DATABASE_HOST: ${DATABASE_HOST:-db}
+      DATABASE_HOST: ${DATABASE_HOST:-postgres}
       DATABASE_PORT: ${DATABASE_PORT:-5432}
-      DATABASE_USER: ${DATABASE_USER:-postgres}
-      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-postgres}
-      DATABASE_NAME: ${DATABASE_NAME:-user_db}
+      DATABASE_USER: ${DATABASE_USER:-vr}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-deadbeef}
+      DATABASE_NAME: ${DATABASE_NAME:-vr}
+    networks:
+      vr:
+        ipv4_address: 10.22.10.1
 
-  db:
+  postgres:
     image: postgres:17-bookworm
     environment:
       POSTGRES_USER: ${DATABASE_USER:-postgres}
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-postgres}
-      POSTGRES_DB: ${DATABASE_NAME:-user_db}
+      POSTGRES_DB: ${DATABASE_NAME:-postgres}
     volumes:
       - vr_pg_data:/var/lib/postgresql/data
+    networks:
+      vr:
+        ipv4_address: 10.22.20.1
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      CONFIG_DATABASE_URI: postgresql://vr:deadbeef@postgres:5432/vr
+      PGADMIN_DEFAULT_EMAIL: olehdevua@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: deadbeef
+    networks:
+      vr:
+        ipv4_address: 10.22.20.10
 
 volumes:
   vr_pg_data:
+
+networks:
+  vr:
+    name: vr
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.22.0.0/16

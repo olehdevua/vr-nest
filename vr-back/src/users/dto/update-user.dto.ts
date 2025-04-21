@@ -1,10 +1,10 @@
-import { DTO, DTOProperty } from '../../core/lib/typebox-dto';
+import { TSchema, TProperty } from '../../core/lib/typebox-schema';
 
-@DTO()
+@TSchema()
 export class UpdateUserDto {
-  @DTOProperty()
+  @TProperty()
   name!: string;
 
-  @DTOProperty()
+  @TProperty()
   age!: number;
 }

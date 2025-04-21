@@ -1,19 +1,53 @@
+import { InjectPinoLogger, PinoLogger } from 'nestjs-pino';
 import { Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { UserRepo } from './repos/user.repo';
+import { validate } from '../core/lib/typebox-schema';
+import { User } from './entities/user.entity';
+import { FindOneUserDto } from './dto/find-one-user.dto';
+import { instanceToPlain } from 'class-transformer';
 
 @Injectable()
 export class UsersService {
-  create(_createUserDto: CreateUserDto) {
-    return 'This action adds a new user';
+  constructor(
+    protected readonly userRepo: UserRepo,
+    @InjectPinoLogger(UsersService.name) protected readonly logger: PinoLogger,
+  ) {}
+
+  async create(body: unknown) {
+    const result = validate(CreateUserDto, body);
+    const errors = [...result];
+    if (errors.length > 0) {
+      this.logger.error(errors);
+      return { errors };
+    }
+
+    const user = await User.create(body as CreateUserDto);
+    this.logger.debug('created user', user);
+
+    const response: unknown = await this.userRepo.createUser(user);
+    return response;
   }
 
-  findAll() {
-    return [];
+  async findAll() {
+    const users = await this.userRepo.findAll();
+    const usersDTO = instanceToPlain(users);
+    this.logger.debug('findAll users', users);
+    return { users: usersDTO };
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} user`;
+  async findOne(query: unknown) {
+    const result = validate(FindOneUserDto, query);
+    const errors = [...result];
+    if (errors.length > 0) {
+      this.logger.error(errors);
+      return { errors };
+    }
+
+    const user = await this.userRepo.findOne(query as FindOneUserDto);
+    const userDTO = instanceToPlain(user);
+    return { user: userDTO };
   }
 
   update(id: number, _updateUserDto: UpdateUserDto) {

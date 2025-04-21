@@ -1,10 +1,11 @@
-import { DTO, DTOProperty } from '../../core/lib/typebox-dto';
+import { TSchema, TProperty } from '../../core/lib/typebox-schema';
+import { Type } from '@sinclair/typebox';
 
-@DTO()
+@TSchema({ additionalProperties: false })
 export class CreateUserDto {
-  @DTOProperty()
+  @TProperty(Type.String({ format: 'email' }))
   public email!: string;
 
-  @DTOProperty()
+  @TProperty(Type.String({ format: 'password' }))
   public password!: string;
 }
