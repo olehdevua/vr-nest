@@ -1,5 +1,6 @@
 import { Injectable, Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 
 @Injectable()
 export class VRConfigService {
@@ -12,7 +13,7 @@ export class VRConfigService {
     };
   }
 
-  getPostgresConfig() {
+  getPostgresConfig(): TypeOrmModuleOptions {
     return {
       type: 'postgres',
       host: this.configService.get<string>('DATABASE_HOST'),
@@ -20,9 +21,10 @@ export class VRConfigService {
       username: this.configService.get<string>('DATABASE_USER'),
       password: this.configService.get<string>('DATABASE_PASSWORD'),
       database: this.configService.get<string>('DATABASE_NAME'),
-      synchronize: this.configService.get<string>('NODE_ENV') === 'test', // Auto-creates database schema, use with caution in production
       autoLoadEntities: true,
-    } as const;
+      retryAttempts: 5 as number,
+      logging: ['query'],
+    };
   }
 }
 

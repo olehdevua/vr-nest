@@ -24,6 +24,17 @@ $ npm run start:prod
 ## Run tests
 
 ```bash
+export PGHOST=10.22.20.1
+export PGPASSWORD=deadbeef
+export PGUSER=vr
+export PGDATABASE=vr
+
+for worker_id in {7..9}; do
+    psql -c "create database vr${worker_id} owner = \"vr\""
+    DATABASE_NAME="vr${worker_id}" npm run migration:run
+done
+
+
 # unit tests
 $ npm run test
 

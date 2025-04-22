@@ -11,7 +11,7 @@ services:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD:-deadbeef}
       DATABASE_NAME: ${DATABASE_NAME:-vr}
       PINO_LOGGER_PRETTY: true
-      PINO_LOGGER_LEVEL: 'info'
+      PINO_LOGGER_LEVEL: 'debug'
     volumes:
       - ./vr-back/src:/home/node/app/src
     depends_on:

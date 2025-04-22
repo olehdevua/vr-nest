@@ -4,13 +4,18 @@ import { UsersModule } from './users.module';
 
 describe('UsersController', () => {
   let controller: UsersController;
+  let module: TestingModule;
 
   beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
+    module = await Test.createTestingModule({
       imports: [UsersModule],
     }).compile();
 
     controller = module.get<UsersController>(UsersController);
+  });
+
+  afterAll(async () => {
+    await module.close();
   });
 
   it('should be defined', () => {

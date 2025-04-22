@@ -9,13 +9,21 @@ export class UserRepo {
     @InjectRepository(User) protected readonly repository: Repository<User>,
   ) {}
 
-  async createUser(user: User): Promise<any> {
+  async createUser(user: User): Promise<string> {
     // const user = User.create(createUserDto);
     // const user = this.repository.create(createUserDto);
 
     const insertRes = await this.repository.insert(user);
 
-    return insertRes.generatedMaps;
+    const recordMap = insertRes.generatedMaps[0];
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    const id = recordMap && recordMap['id'];
+
+    if (typeof id !== 'string') {
+      throw new TypeError(`Id must be a string, id=${id}`);
+    }
+
+    return id;
   }
 
   findAll(): Promise<User[]> {

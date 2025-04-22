@@ -7,6 +7,8 @@ import { validate } from '../core/lib/typebox-schema';
 import { User } from './entities/user.entity';
 import { FindOneUserDto } from './dto/find-one-user.dto';
 import { instanceToPlain } from 'class-transformer';
+import { UserDto } from './dto/user.dto';
+import { ResourceDTO } from '../core/types';
 
 @Injectable()
 export class UsersService {
@@ -15,7 +17,7 @@ export class UsersService {
     @InjectPinoLogger(UsersService.name) protected readonly logger: PinoLogger,
   ) {}
 
-  async create(body: unknown) {
+  async create(body: unknown): Promise<ResourceDTO<UserDto>> {
     const result = validate(CreateUserDto, body);
     const errors = [...result];
     if (errors.length > 0) {
@@ -23,11 +25,23 @@ export class UsersService {
       return { errors };
     }
 
-    const user = await User.create(body as CreateUserDto);
+    const user: User = await User.create(body as CreateUserDto);
     this.logger.debug('created user', user);
 
-    const response: unknown = await this.userRepo.createUser(user);
-    return response;
+    user.id = await this.userRepo.createUser(user);
+
+    // const dto = instanceToPlain(user);
+    // const errors1 = [...validate(UserDto, dto)];
+    // if (errors1.length > 0) {
+    //   this.logger.error(errors1);
+    //   return { errors: errors1 };
+    // }
+    //
+    // return dto as UserDto;
+
+    const content = instanceToPlain(user) as UserDto;
+
+    return { content };
   }
 
   async findAll() {
