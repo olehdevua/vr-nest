@@ -4,7 +4,8 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import { CreateUserDto } from '../dto/create-user.dto';
 import { Exclude } from 'class-transformer';
 
-@Entity('users', { synchronize: false })
+// @Entity('users', { synchronize: false })
+@Entity('users')
 export class User {
   @PrimaryGeneratedColumn('uuid')
   id: string = uuid.v1();
