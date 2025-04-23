@@ -12,15 +12,12 @@ jobs:
 
     # Service containers to run with the job
     services:
-      # Label used to access the service container
       postgres:
-        # Docker Hub image
-        image: postgres:17-bookworm # Use the same major version as your docker-compose
-        # Environment variables needed for PostgreSQL setup
+        image: postgres:17-bookworm
         env:
-          POSTGRES_USER: vr
-          POSTGRES_PASSWORD: deadbeef
-          POSTGRES_DB: vr-back
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
@@ -55,18 +52,19 @@ jobs:
       - name: Setup test db
         working-directory: ./vr-back
         env:
-          PGHOST: postgres
+          DATABASE_HOST: localhost
+          DATABASE_PORT: 5432
+          DATABASE_USER: vr
+          DATABASE_PASSWORD: deadbeef
+          DATABASE_NAME: vr-back
         run: npm run test:setup-db
 
       - name: Run integration tests
         working-directory: ./vr-back
-        # Set environment variables for the test runner
-        # These should match the service container's env vars and connection details
         env:
-          DATABASE_HOST: postgres # Use the service label as the hostname
-          DATABASE_PORT: 5432     # Use the port exposed by the service container
+          DATABASE_HOST: localhost
+          DATABASE_PORT: 5432
           DATABASE_USER: vr
           DATABASE_PASSWORD: deadbeef
-          DATABASE_NAME: vr
-          # Add any other environment variables your tests might need
+          DATABASE_NAME: vr-back
         run: npm run test
