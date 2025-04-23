@@ -11,14 +11,12 @@ $ npm install
 ## Compile and run the project
 
 ```bash
-# development
-$ npm run start
+# create migration
+npx typeorm migration:create ./src/migrations/create-vr-back-database
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+npm run start # development
+npm run start:dev # watch mode
+npm run start:prod # production mode
 ```
 
 ## Run tests

@@ -1,0 +1,72 @@
+name: Integration Tests
+
+on:
+  push:
+    branches: [ main ] # Or your default branch (e.g., master)
+  pull_request:
+    branches: [ main ] # Or your default branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    # Service containers to run with the job
+    services:
+      # Label used to access the service container
+      postgres:
+        # Docker Hub image
+        image: postgres:17-bookworm # Use the same major version as your docker-compose
+        # Environment variables needed for PostgreSQL setup
+        env:
+          POSTGRES_USER: vr
+          POSTGRES_PASSWORD: deadbeef
+          POSTGRES_DB: vr-back
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          # Maps tcp port 5432 on service container to the host
+          # We don't need to specify a host port; GitHub Actions maps it
+          # and makes it accessible via the service label hostname ('postgres') on port 5432
+          - 5432:5432
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+          cache-dependency-path: vr-back/package-lock.json
+
+      - name: Install backend dependencies
+        working-directory: ./vr-back # Run npm in the backend directory
+        run: npm ci
+
+      - name: Build backend application
+        working-directory: ./vr-back
+        run: npm run build # Assuming tests might run against the built code
+
+      - name: Setup test db
+        working-directory: ./vr-back
+        env:
+          PGHOST: postgres
+        run: npm run test:setup-db
+
+      - name: Run integration tests
+        working-directory: ./vr-back
+        # Set environment variables for the test runner
+        # These should match the service container's env vars and connection details
+        env:
+          DATABASE_HOST: postgres # Use the service label as the hostname
+          DATABASE_PORT: 5432     # Use the port exposed by the service container
+          DATABASE_USER: vr
+          DATABASE_PASSWORD: deadbeef
+          DATABASE_NAME: vr
+          # Add any other environment variables your tests might need
+        run: npm run test

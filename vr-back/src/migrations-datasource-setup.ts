@@ -11,7 +11,7 @@ const {
 export default new DataSource({
   // entities: [],
   migrations: ['./dist/src/migrations/*.js'],
-  migrationsTableName: 'custom_migration_table',
+  // migrationsTableName: 'custom_migration_table',
 
   type: 'postgres',
   host: DATABASE_HOST,
