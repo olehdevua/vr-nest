@@ -83,3 +83,6 @@ So, basically...
 Typeorm `forFeature` add entities to `EntitiesMetadataStorage` and provides only specified entities repositories.
 When `forRootAsync` in root `app.module.ts` is called it take all entities added by all `forFeature`s, and create
 new `DataSource` with all those entities provided by `forFeatures`s
+
+
+

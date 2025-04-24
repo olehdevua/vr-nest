@@ -1,20 +1,21 @@
 import { Module } from '@nestjs/common';
-import { UsersService } from './users.service';
-import { UsersController } from './users.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { VRLoggerModule } from '../core/modules/vr-logger.module';
+import { VRPostgresModule } from '../core/modules/vr-postgres.module';
+import { UsersController } from './users.controller';
+import { UsersService } from './services/users.service';
+import { UsersCreateService } from './services/users-create.service';
 import { User } from './entities/user.entity';
 import { UserRepo } from './repos/user.repo';
-import { loggerModule } from '../core/modules/vr-logger.module';
-import { typeormPostgresModule } from '../core/modules/vr-postgres.module';
 
 @Module({
   imports: [
-    loggerModule,
-    typeormPostgresModule,
+    VRLoggerModule.forRootAsync(),
+    VRPostgresModule.forRootAsync(),
     TypeOrmModule.forFeature([User]),
   ],
   controllers: [UsersController],
-  providers: [UsersService, UserRepo],
+  providers: [UsersService, UsersCreateService, UserRepo],
   exports: [UsersService],
 })
 export class UsersModule {}

@@ -14,6 +14,7 @@ services:
       PINO_LOGGER_LEVEL: 'debug'
     volumes:
       - ./vr-back/src:/home/node/app/src
+      - ./vr-back/scripts:/home/node/app/scripts
     depends_on:
       - postgres
     command: npm run start:dev # Or start:prod for production build
