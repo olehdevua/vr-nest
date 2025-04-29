@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ] # Or your default branch
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -68,3 +72,44 @@ jobs:
           DATABASE_PASSWORD: deadbeef
           DATABASE_NAME: vr-back
         run: npm run test
+
+      # Authenticate to Google Cloud AFTER tests pass
+      - name: Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+      # Configure Docker to use gcloud credential helper
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      # Configures the Docker client to use gcloud credentials
+      # (obtained via WIF in the previous step) to authenticate with GAR Docker repositories.
+      # It takes a comma-separated list of GAR hostnames (format LOCATION-docker.pkg.dev).
+      - name: Authorize Docker push
+        run: gcloud auth configure-docker ${{ secrets.GAR_LOCATION }}-docker.pkg.dev
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ secrets.GAR_LOCATION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GAR_REPOSITORY }}/vr-back
+          tags: |
+            type=sha # Add Git SHA tag
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }} # Add latest tag only for main branch
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./vr-back # Path to the vr-back directory
+          target: production # Build the production stage from Dockerfile
+          push: true # Push the image
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha # Enable GitHub Actions cache for Docker layers
+          cache-to: type=gha,mode=max
