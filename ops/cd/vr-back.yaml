@@ -1,0 +1,63 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vr-back-service
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 3000
+      name: api
+  selector:
+    service: vr-back
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vr-back-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: vr-back
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: vr-back
+        service: vr-back
+    spec:
+      containers:
+        - image: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back:latest
+          name: vr-back
+          ports:
+            - containerPort: 3000
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /health
+              port: 3000
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /health
+              port: 3000
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+            initialDelaySeconds: 10
+          resources:
+            requests:
+              cpu: 200m
+              memory: 150Mi
+            limits:
+              cpu: 300m
+              memory: 250Mi

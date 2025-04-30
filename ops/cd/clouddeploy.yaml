@@ -1,0 +1,17 @@
+apiVersion: deploy.cloud.google.com/v1
+kind: DeliveryPipeline
+metadata:
+  name: vr-nest-pipeline
+description: main application pipeline
+serialPipeline:
+  stages:
+  - targetId: vr-nest-target
+    profiles: []
+---
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+  name: vr-nest-target
+description: main cluster
+gke:
+  cluster: projects/olehdevua-vr-nest/locations/europe-west3/clusters/vr-nest-cluster
