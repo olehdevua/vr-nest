@@ -37,6 +37,11 @@ spec:
           name: vr-back
           ports:
             - containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: vr-back-db-config
+            - secretRef:
+                name: vr-back-db-secret
           readinessProbe:
             failureThreshold: 3
             httpGet:
@@ -61,3 +66,25 @@ spec:
             limits:
               cpu: 300m
               memory: 250Mi
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vr-back-db-config
+  # namespace: default # Or the namespace where vr-back runs
+data:
+  DATABASE_HOST: "your-db-host"
+  DATABASE_PORT: "5432"
+  DATABASE_USER: "vr"
+  DATABASE_NAME: "vr-back"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: vr-back-db-secret # Name referenced in the Deployment
+  # namespace: default # Or the namespace where vr-back runs
+type: Opaque
+data:
+  # Value is the Base64 encoded version of your password
+  # echo -n 'deadbeef' | base64  ->  ZGVhZGJlZWY=
+  DATABASE_PASSWORD: ZGVhZGJlZWY= # <-- Replace with Base64 of your actual password
