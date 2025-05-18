@@ -1,0 +1,25 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: k3s-traefik-servicemonitor
+  namespace: monitoring # Crucial! namespace of kube-prometheus-stack
+  labels:
+    # Add labels that your Prometheus Operator's serviceMonitorSelector will pick up.
+    # This often includes the release name of your kube-prometheus-stack.
+    # For example, if you installed kube-prometheus-stack with release name "prometheus":
+    release: prometheus
+    # Or any other label your Prometheus configuration is set to discover.
+    # Check your kube-prometheus-stack values.yaml for:
+    # prometheus.prometheusSpec.serviceMonitorSelector
+    # prometheus.prometheusSpec.serviceMonitorNamespaceSelector
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: traefik # Label to select the K3s Traefik service
+  namespaceSelector:
+    matchNames:
+      - kube-system
+  endpoints:
+    - port: metrics
+      path: /metrics
+      interval: 10s

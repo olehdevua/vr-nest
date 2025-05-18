@@ -1,0 +1,20 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: k3s-traefik-podmonitor
+  namespace: monitoring # Deploy this in the same namespace as your kube-prometheus-stack
+  labels:
+    # Add labels that your Prometheus Operator's podMonitorSelector will pick up.
+    # This often includes the release name.
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: traefik
+  namespaceSelector:
+    matchNames:
+      - kube-system
+  podMetricsEndpoints:
+    - port: metrics # This MUST match the 'name' of the containerPort in the pod spec (metrics)
+      path: /metrics
+      interval: 10s

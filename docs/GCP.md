@@ -27,3 +27,8 @@ to impersonate the Service Account.
 **GitHub Actions Workflow**:
 Needs specific configuration (permissions: `id-token: write`) and
 the `google-github-actions/auth` *action*.
+
+
+# Artifacts
+
+https://cloud.google.com/artifact-registry/docs/nodejs/store-nodejs#gcloud

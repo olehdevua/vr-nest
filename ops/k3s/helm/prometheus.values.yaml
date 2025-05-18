@@ -1,0 +1,122 @@
+alertmanager:
+  enabled: true
+  alertManagerSpec:
+    storage: {} # default
+  persistentVolume: { enabled: false } # disable PV locally if not needed
+  resources: { requests: {cpu: 200m, memory: 200Mi}, limits: {cpu: 200m, memory: 200Mi} }
+
+grafana:
+  enabled: true # Set to false if you don't need Grafana locally
+  forceDeployDashboards: true
+  defaultDashboardsTimezone: "UTC" # Or your local timezone
+  adminPassword: "prom-operator" # Change this for any non-trivial local use
+  persistentVolume: { enabled: false } # disable PV locally if not needed
+  resources: { requests: {cpu: 400m, memory: 300Mi}, limits: {cpu: 400m, memory: 300Mi} }
+  # ingress: # If you have an ingress controller on K3s (like Traefik which is default)
+  #   enabled: true
+  #   ingressClassName: traefik # Or your specific ingress class
+  #   hosts: [ grafana.k3s.local ] # Ensure this resolves locally or use port-forward
+  #   paths: [ / ]
+
+kubeApiServer: { enabled: true } # Scrapes API server
+
+kubelet:
+  enabled: true # Scrapes Kubelets
+  serviceMonitor:
+    cAdvisorMetricRelabelings: # K3s specific relabeling for cAdvisor metrics if needed
+      - sourceLabels: [__meta_kubernetes_node_label_node_role_kubernetes_io_control_plane]
+        action: keep
+        regex: "true"
+      - sourceLabels: [__meta_kubernetes_node_label_node_role_kubernetes_io_master] # Older K3s versions might use master label
+        action: keep
+        regex: "true"
+
+# K3s runs control plane components as processes, not pods by default.
+# Metrics might not be scraped via the default service endpoint.
+# More advanced configuration is needed for K3s control plane metrics,
+# often by enabling them in K3s config and then creating custom ServiceMonitors.
+kubeControllerManager: { enabled: false }
+# Similar to kubeControllerManager, K3s's etcd setup is different.
+kubeEtcd: { enabled: false }
+kubeScheduler: { enabled: false } # Similar to kubeControllerManager.
+# K3s uses a different proxy mechanism (kube-router by default, flannel for CNI)
+# and doesn't expose kube-proxy metrics in the same way.
+kubeProxy: { enabled: false }
+
+kubeStateMetrics:
+  enabled: true
+# resources: { requests: {cpu: 200m, memory: 200Mi}, limits: {cpu: 200m, memory: 200Mi} }
+
+prometheusOperator:
+  resources: { requests: {cpu: 300m, memory: 300Mi}, limits: {cpu: 300m, memory: 300Mi} }
+#
+# Tolerations for K3s control-plane nodes if Prometheus needs to run there
+# For K3s, if it's a single-node cluster, all workloads run on the control-plane/master.
+# Default chart might already have appropriate tolerations.
+# admissionWebhooks:
+#   patch:
+#     tolerations:
+#     - {key: "CriticalAddonsOnly",                   operator: "Exists"}
+#     - {key: "node-role.kubernetes.io/master",       operator: "Exists", effect: "NoSchedule"} # for older k8s versions
+#     - {key: "node-role.kubernetes.io/control-plane",operator: "Exists", effect: "NoSchedule"}
+
+
+prometheus:
+  enabled: true
+  prometheusSpec:
+    # For K3s, control plane components (kube-scheduler, kube-controller-manager)
+    # are not exposed as services that Prometheus can scrape by default.
+    # K3s exposes these on the host network.
+    # Disabling scraping for them initially is easier for a basic local setup.
+    #
+    # serviceMonitorSelectorNilUsesHelmValues: false # Set to true if you only want to use ServiceMonitors defined by this chart
+    # podMonitorSelectorNilUsesHelmValues: false # Set to true if you only want to use PodMonitors defined by this chart
+    retention: "2d" # Keep short retention for local dev
+    retentionSize: "3GB" # Limit storage size
+
+    ## If {}, select all ServiceMonitors - DEFAULT
+    serviceMonitorSelector: {}
+    podMonitorSelector: {}
+
+    # To disable persistence and use an emptyDir volume for Prometheus server pods:
+    storageSpec:
+      # emptyDir: { medium: Memory } # Using tmpfs volume
+      volumeClaimTemplate:
+        spec:
+          storageClassName: local-path
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests: { storage: 3Gi }
+        selector: {} # Optional: match specific labels on PVs
+#   resources:
+#     requests: {cpu: 200m, memory: 500Mi}
+#     limits: {cpu: 500m, memory: 1Gi}
+
+# Disable network policies if you are not managing them yet or if K3s's
+# default (if any) is sufficient for local
+# networkPolicies:
+#   enabled: false
+
+# CoreDNS and coredns specific settings - usually auto-detected well
+# Kubelet scraping is important
+# Node exporter provides host metrics
+nodeExporter:
+  enabled: true
+# resources:
+#   requests: {cpu: 50m, memory: 50Mi}
+#   limits: {cpu: 100m, memory: 100Mi}
+# tolerations: # Ensure nodeExporter runs on all nodes, including control-plane/master
+# - {key: "CriticalAddonsOnly",                   operator: "Exists"}
+# - {key: "node-role.kubernetes.io/master",       operator: "Exists", effect: "NoSchedule"}
+# - {key: "node-role.kubernetes.io/control-plane",operator: "Exists", effect: "NoSchedule"}
+
+
+# --- K3s Specific Considerations for Control Plane Metrics ---
+# K3s does not expose metrics for scheduler, controller-manager, or etcd via standard ServiceMonitors easily
+# because they run as processes managed by the K3s server binary.
+# To monitor them, you often need to:
+# 1. Ensure K3s is started with flags to expose their metrics (e.g., on http://localhost:10257 for controller-manager, etc.).
+#    This is done by modifying K3s service arguments.
+# 2. Create ServiceMonitors that target these host ports on your K3s master node(s).
+# This is more advanced and might not be necessary for a basic local setup. The default kubelet and cAdvisor
+# metrics will give you a lot of insight already.

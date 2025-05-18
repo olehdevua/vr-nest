@@ -37,15 +37,10 @@ helm install postgresql-release bitnami/postgresql \
   --namespace postgresql \
   --set auth.postgresPassword='YourPostgresPassword' \
   --set auth.replicationPassword='YourReplicationPassword'
-  # Add other --set flags or a --values file for more configuration (persistence, resources, etc.)
-
-# --- Example with Persistence (uses default StorageClass) ---
-# helm install postgresql-release bitnami/postgresql \
-#  --namespace postgresql \
-#  --set auth.postgresPassword='YourPostgresPassword' \
-#  --set auth.replicationPassword='YourReplicationPassword' \
-#  --set primary.persistence.enabled=true \
-#  --set primary.persistence.size=8Gi
+# --set primary.persistence.enabled=true \
+# --set primary.persistence.size=8Gi
+#
+# Add other --set flags or a --values file for more configuration (persistence, resources, etc.)
 
 helm show values bitnami/postgresql
 
@@ -62,10 +57,12 @@ helm status postgresql-release -n postgresql
 
 ```bash
 # To get the password for "postgres" run:
-export POSTGRES_PASSWORD=$(kubectl get secret --namespace postgresql postgresql-release -o jsonpath="{.data.postgres-password}" | base64 -d)
+export POSTGRES_PASSWORD=$(\
+  kubectl get secret -n postgresql postgresql-release -o jsonpath="{.data.postgres-password}" \
+  | base64 -d)
 
 # To connect to your database run the following command:
-kubectl run postgresql-release-client --rm --tty -i --restart='Never' --namespace postgresql \
+kubectl run postgresql-release-client -n postgresql --rm --tty -i --restart='Never' \
   --image docker.io/bitnami/postgresql:17.4.0-debian-12-r15 \
   --env="PGPASSWORD=$POSTGRES_PASSWORD" \
   --command -- \
@@ -77,7 +74,7 @@ kubectl run postgresql-release-client --rm --tty -i --restart='Never' --namespac
 /opt/bitnami/scripts/postgresql/entrypoint.sh /bin/bash
 
 # To connect to your database from outside the cluster execute the following commands:
-kubectl port-forward --namespace postgresql svc/postgresql-release 5432:5432 &
+kubectl port-forward -n postgresql svc/postgresql-release 5432:5432 &
 PGPASSWORD="$POSTGRES_PASSWORD" psql --host 127.0.0.1 -U postgres -d postgres -p 5432
 ```
 
@@ -281,3 +278,99 @@ sudo ctr images push --plain-http $REGISTRY_HOST/library/busybox:v1
 sudo ctr images remove $REGISTRY_HOST/library/busybox:v1
 sudo ctr images pull --plain-http $REGISTRY_HOST/library/busybox:v1
 ```
+
+## Install prometheus
+
+Be mindful that K3s itself is lightweight, but a full Prometheus stack can consume significant resources
+(adjust requests/limits).
+
+If you're using the K3s default network policy setup
+(which uses kube-router and allows all by default unless policies are applied),
+you might not need these initially or might need to adjust them.
+
+```bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+
+helm install prometheus prometheus-community/kube-prometheus-stack \
+  --namespace monitoring \
+  -f ops/k3s/helm/prometheus.values.yaml \
+  --create-namespace # If you didn't create it before
+
+kubectl -n monitoring get pods -l "release=prometheus"
+
+# Get Grafana 'admin' user password by running:
+kubectl -n monitoring get secrets prometheus-grafana -o jsonpath="{.data.admin-password}" | base64 -d
+
+# Access Grafana local instance:
+export POD_NAME=$(kubectl -n monitoring get pod \
+  -l "app.kubernetes.io/name=grafana,app.kubernetes.io/instance=prometheus" \
+  -oname)
+kubectl -n monitoring port-forward $POD_NAME 3000
+
+# Gemini approach
+#
+# Get the Prometheus service name (it usually contains 'prometheus-operated')
+kubectl -n monitoring get all -l operator.prometheus.io/name=prometheus-kube-prometheus-prometheus
+# NAME                                                                READY   STATUS    RESTARTS   AGE
+# pod/prometheus-prometheus-kube-prometheus-prometheus-0              2/2     Running   0          30h
+# statefulset.apps/prometheus-prometheus-kube-prometheus-prometheus   1/1     30h
+kubectl -n monitoring get all -l app.kubernetes.io/name=prometheus
+# NAME                                                     READY   STATUS    RESTARTS   AGE
+# pod/prometheus-prometheus-kube-prometheus-prometheus-0   2/2     Running   0          30h
+#
+# So, both services appropriate `svc/prometheus-operated` and `svc/prometheus-kube-prometheus-prometheus`
+# Don't know which is more appropriate by design.
+
+# Forward (replace <prometheus-service-name> with the actual name, e.g., prometheus-operated)
+kubectl port-forward -n monitoring svc/prometheus-operated 9090:9090
+
+
+# Get the Grafana service name (it usually contains 'grafana')
+kubectl get svc -n monitoring -l app.kubernetes.io/name=grafana
+# Forward (replace <grafana-service-name> with the actual name)
+kubectl port-forward -n monitoring svc/prometheus-grafana 3000:80
+
+# Get Grafana password (set in `prometheus.values.yaml#grafana.adminPassword`)
+kubectl get secret -n monitoring prometheus-grafana \
+  -o jsonpath="{.data.admin-password}" \
+  | base64 --decode
+
+#kubectl apply -f ops/k3s/resources/traefik-servicemonitor.yaml
+kubectl apply -f ops/k3s/resources/traefik-podmonitor.yaml
+```
+
+[instructions](https://github.com/prometheus-operator/kube-prometheus) on how
+to create & configure *Alertmanager* and *Prometheus instances* using the Operator.
+
+
+```bash
+typeorm migration:run -d dist/src/migrations-datasource-setup.js
+```
+Output
+```
+query: SELECT version()
+                query: SELECT * FROM current_schema()
+                                       query: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = 'public' AND "table_name" = 'migrations'
+         query: CREATE TABLE "migrations" ("id" SERIAL NOT NULL, "timestamp" bigint NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_8c82d7f52634
+0ab734260ea46be" PRIMARY KEY ("id"))
+  query failed: CREATE TABLE "migrations" ("id" SERIAL NOT NULL, "timestamp" bigint NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_8c82d
+7f526340ab734260ea46be" PRIMARY KEY ("id"))
+  error: error: permission denied for schema public
+Error during migration run:
+QueryFailedError: permission denied for schema public
+    at PostgresQueryRunner.query (/home/node/app/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:216:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryRunner.executeQueries (/home/node/app/node_modules/typeorm/query-runner/BaseQueryRunner.js:425:13)
+    at async PostgresQueryRunner.createTable (/home/node/app/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:426:9)
+    at async MigrationExecutor.createMigrationsTableIfNotExist (/home/node/app/node_modules/typeorm/migration/MigrationExecutor.js:351:13)
+    at async MigrationExecutor.executePendingMigrations (/home/node/app/node_modules/typeorm/migration/MigrationExecutor.js:129:9)
+    at async DataSource.runMigrations (/home/node/app/node_modules/typeorm/data-source/DataSource.js:265:35)
+    at async Object.handler (/home/node/app/node_modules/typeorm/commands/MigrationRunCommand.js:68:13) {
+  query: 'CREATE TABLE "migrations" ("id" SERIAL NOT NULL, "timestamp" bigint NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_8c82d7f52
+6340ab734260ea46be" PRIMARY KEY ("id"))',
+  parameters: undefined,
+  driverError: error: permission denied for schema public
+```
+
+I can't create database. Is it because of "id" column type is 'uuid' and I didn't install 

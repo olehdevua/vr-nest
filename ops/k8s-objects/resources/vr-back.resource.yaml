@@ -1,0 +1,62 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vr-back
+  labels:
+    service: vr-back
+spec:
+  selector:
+    app: vr-back
+  ports:
+    - port: 3000
+      targetPort: 3000
+      protocol: TCP
+      name: http
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vr-back
+  labels:
+    app: vr-back
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vr-back
+  template:
+    metadata:
+      labels:
+        service: vr-back
+        app: vr-back
+    spec:
+      imagePullSecrets:
+        - name: gar-creds # edu/notes/k8s-notes.md#k3s-gcp--access-gar-image
+      containers:
+        - name: vr-back
+          image: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back:latest
+          #image: $GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$GAR_REPOSITORY/vr-back:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: DATABASE_HOST
+              value: "postgresql-release.postgresql.svc.cluster.local"
+            - name: DATABASE_PORT
+              value: "5432"
+            - name: DATABASE_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: username
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: password
+            - name: DATABASE_NAME
+              value: "vr-back"
+            - name: PINO_LOGGER_PRETTY
+              value: "true"
+            - name: PINO_LOGGER_LEVEL
+              value: "info"
