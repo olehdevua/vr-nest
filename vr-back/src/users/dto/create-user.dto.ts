@@ -1,5 +1,5 @@
-import { TSchema, TProperty } from '../../core/lib/typebox-schema';
 import { Type } from '@sinclair/typebox';
+import { TSchema, TProperty } from '../../core/lib/typebox-schema';
 
 @TSchema({ additionalProperties: false })
 export class CreateUserDto {

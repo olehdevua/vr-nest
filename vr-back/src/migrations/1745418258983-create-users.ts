@@ -19,6 +19,7 @@ export class CreateUsers1745418258983 implements MigrationInterface {
         { name: 'password_hash', type: 'bytea' },
         { name: 'password_salt', type: 'bytea' },
         { name: 'name', type: 'varchar', isNullable: true },
+        { name: 'age', type: 'int', isNullable: true },
       ],
     });
     await queryRunner.createTable(userTable, true, true, true);

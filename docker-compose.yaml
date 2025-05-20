@@ -1,5 +1,6 @@
 services:
-  back:
+  vr-back:
+    container_name: vr-back
     build:
       context: ./vr-back
       dockerfile: Dockerfile
@@ -15,14 +16,14 @@ services:
     volumes:
       - ./vr-back/src:/home/node/app/src
       - ./vr-back/scripts:/home/node/app/scripts
-    depends_on:
-      - postgres
+#   depends_on:
+#     - postgres
     command: npm run start:dev # Or start:prod for production build
     networks:
-      vr:
-        ipv4_address: 10.22.10.1
+      vr: { ipv4_address: 10.22.10.1 }
 
-  back-production:
+  vr-back-production:
+    container_name: vr-back-production
     build:
       context: ./vr-back
       dockerfile: Dockerfile
@@ -35,19 +36,25 @@ services:
       DATABASE_NAME: ${DATABASE_NAME:-vr-back}
     networks:
       vr:
-        ipv4_address: 10.22.10.1
+        ipv4_address: 10.22.10.2
 
-  postgres:
+  vr-postgres:
+    container_name: vr-postgres
     image: postgres:17-bookworm
     environment:
       POSTGRES_USER: ${DATABASE_USER:-postgres}
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-postgres}
       POSTGRES_DB: ${DATABASE_NAME:-postgres}
+      PGUSER: ${PGUSER:-postgres}
+      PGHOST: ${PGHOST:-10.22.0.1}
+      PGDATABASE: ${PGDATABASE:-postgres}
+      PGPASSWORD: ${PGPASSWORD:-postgres}
     volumes:
       - vr_pg_data:/var/lib/postgresql/data
-    networks:
-      vr:
-        ipv4_address: 10.22.20.1
+    network_mode: host
+#   networks:
+#     vr:
+#       ipv4_address: 10.22.20.1
 
   pgadmin:
     image: dpage/pgadmin4

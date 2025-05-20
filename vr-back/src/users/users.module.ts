@@ -2,11 +2,12 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { VRLoggerModule } from '../core/modules/vr-logger.module';
 import { VRPostgresModule } from '../core/modules/vr-postgres.module';
+import { User } from './entities/user.entity';
+import { UserRepo } from './repos/user.repo';
 import { UsersController } from './users.controller';
 import { UsersService } from './services/users.service';
 import { UsersCreateService } from './services/users-create.service';
-import { User } from './entities/user.entity';
-import { UserRepo } from './repos/user.repo';
+import { UsersUpdateService } from './services/users-update.service';
 
 @Module({
   imports: [
@@ -15,7 +16,7 @@ import { UserRepo } from './repos/user.repo';
     TypeOrmModule.forFeature([User]),
   ],
   controllers: [UsersController],
-  providers: [UsersService, UsersCreateService, UserRepo],
+  providers: [UsersService, UsersCreateService, UsersUpdateService, UserRepo],
   exports: [UsersService],
 })
 export class UsersModule {}

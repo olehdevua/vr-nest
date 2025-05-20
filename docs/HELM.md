@@ -62,7 +62,7 @@ export POSTGRES_PASSWORD=$(\
   | base64 -d)
 
 # To connect to your database run the following command:
-kubectl run postgresql-release-client -n postgresql --rm --tty -i --restart='Never' \
+kubectl -n postgresql run postgresql-release-client --rm --tty -i --restart='Never' \
   --image docker.io/bitnami/postgresql:17.4.0-debian-12-r15 \
   --env="PGPASSWORD=$POSTGRES_PASSWORD" \
   --command -- \

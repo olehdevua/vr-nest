@@ -1,7 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { Repository } from 'typeorm';
+import { FindOneOptions, Repository } from 'typeorm';
 import { User } from '../entities/user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
+import { UpdateUserDto } from '../dto/update-user.dto';
 
 @Injectable()
 export class UserRepo {
@@ -26,12 +27,25 @@ export class UserRepo {
     return id;
   }
 
+  async update(id: string, user: UpdateUserDto) {
+    await this.repository.update(id, user);
+  }
+
   findAll(): Promise<User[]> {
     // return this.repository.find({ where: { email: 'oleh-1@mail.com' } });
     return this.repository.find();
   }
 
-  findOne({ id }: { id: string }): Promise<User | null> {
-    return this.repository.findOne({ where: { id } });
+  findOneById({
+    id,
+    select,
+  }: {
+    id: string;
+    select?: (keyof User)[];
+  }): Promise<User | null> {
+    const query: FindOneOptions<User> = { where: { id } };
+    if (select) query.select = select;
+
+    return this.repository.findOne(query);
   }
 }

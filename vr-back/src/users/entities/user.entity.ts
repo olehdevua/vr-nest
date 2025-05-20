@@ -10,11 +10,14 @@ export class User {
   @PrimaryGeneratedColumn('uuid')
   id: string = uuid.v1();
 
+  @Column('text', { unique: true })
+  email!: string;
+
   @Column('varchar', { nullable: true })
   name: string | undefined;
 
-  @Column('text')
-  email!: string;
+  @Column('integer', { nullable: true })
+  age: number | undefined;
 
   @Column('bytea')
   @Exclude({ toPlainOnly: true })

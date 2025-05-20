@@ -1,6 +1,5 @@
 import { InjectPinoLogger, PinoLogger } from 'nestjs-pino';
 import { Injectable } from '@nestjs/common';
-import { UpdateUserDto } from '../dto/update-user.dto';
 import { UserRepo } from '../repos/user.repo';
 import { validate } from '../../core/lib/typebox-schema';
 import { FindOneUserDto } from '../dto/find-one-user.dto';
@@ -28,13 +27,9 @@ export class UsersService {
       return { errors };
     }
 
-    const user = await this.userRepo.findOne(query as FindOneUserDto);
+    const user = await this.userRepo.findOneById(query as FindOneUserDto);
     const userDTO = instanceToPlain(user);
     return { content: userDTO };
-  }
-
-  update(id: number, _updateUserDto: UpdateUserDto) {
-    return `This action updates a #${id} user`;
   }
 
   remove(id: number) {
