@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
       target: development
     environment:
-      DATABASE_HOST: ${DATABASE_HOST:-postgres}
+      DATABASE_HOST: ${DATABASE_HOST:-localhost}
       DATABASE_PORT: ${DATABASE_PORT:-5432}
       DATABASE_USER: ${DATABASE_USER:-vr}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD:-deadbeef}
@@ -29,7 +29,7 @@ services:
       dockerfile: Dockerfile
       target: production
     environment:
-      DATABASE_HOST: ${DATABASE_HOST:-postgres}
+      DATABASE_HOST: ${DATABASE_HOST:-localhost}
       DATABASE_PORT: ${DATABASE_PORT:-5432}
       DATABASE_USER: ${DATABASE_USER:-vr}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD:-deadbeef}
@@ -42,19 +42,14 @@ services:
     container_name: vr-postgres
     image: postgres:17-bookworm
     environment:
-      POSTGRES_USER: ${DATABASE_USER:-postgres}
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD:-postgres}
-      POSTGRES_DB: ${DATABASE_NAME:-postgres}
+      POSTGRES_PASSWORD: postgres
       PGUSER: ${PGUSER:-postgres}
-      PGHOST: ${PGHOST:-10.22.0.1}
+      PGHOST: ${PGHOST:-localhost}
       PGDATABASE: ${PGDATABASE:-postgres}
       PGPASSWORD: ${PGPASSWORD:-postgres}
     volumes:
       - vr_pg_data:/var/lib/postgresql/data
     network_mode: host
-#   networks:
-#     vr:
-#       ipv4_address: 10.22.20.1
 
   pgadmin:
     image: dpage/pgadmin4
@@ -68,6 +63,7 @@ services:
 
 volumes:
   vr_pg_data:
+    name: vr_pg_data
 
 networks:
   vr:

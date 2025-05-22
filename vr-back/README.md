@@ -36,8 +36,8 @@ docker compose run --rm vr-postgres \
   psql -c "create user \"test_user\" encrypted password 'deadbeef'"
 
 for worker_id in {0..4}; do
-#   docker compose run --rm vr-postgres \
-#     psql -c "create database vr${worker_id} owner = \"test_user\""
+    docker compose run --rm vr-postgres \
+      psql -c "create database vr${worker_id} owner = \"test_user\""
 
     docker compose run --build --rm \
       -e DATABASE_NAME="$DATABASE_NAME${worker_id}" \

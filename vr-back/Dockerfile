@@ -11,6 +11,8 @@ RUN npm run build
 
 CMD ["node", "dist/src/main"]
 
+LABEL app=vr-back
+
 
 FROM node:23-bookworm-slim AS development
 
@@ -25,3 +27,5 @@ RUN npm ci && npm cache clean --force
 
 COPY --chown=1000:1000 . /home/node/app
 RUN npm run build
+
+LABEL app=vr-back

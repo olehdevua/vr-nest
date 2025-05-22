@@ -35,7 +35,8 @@ kubectl create namespace postgresql
 # IMPORTANT: Replace 'YourPostgresPassword' and 'YourReplicationPassword' with strong, secure passwords!
 helm install postgresql-release bitnami/postgresql \
   --namespace postgresql \
-  --set auth.postgresPassword='YourPostgresPassword' \
+  --create-namespace \
+  --set auth.postgresPassword='postgres' \
   --set auth.replicationPassword='YourReplicationPassword'
 # --set primary.persistence.enabled=true \
 # --set primary.persistence.size=8Gi
