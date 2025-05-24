@@ -1,0 +1,175 @@
+name: Production Release via Tag on Main
+
+on:
+  push:
+    tags:
+      - 'release-*' # Triggers on tags like release-v1.0.0, release-hotfix-abc
+
+env:
+  # Define image names - add more if you have multiple services in a release
+  VR_BACK_IMAGE_NAME: vr-back
+  # VR_IDENTITY_IMAGE_NAME: vr-identity # Example for another service
+
+  # Cloud Deploy Variables (use secrets for actual values)
+  CLOUD_DEPLOY_PIPELINE: ${{ secrets.CLOUD_DEPLOY_PIPELINE_NAME }}
+  CLOUD_DEPLOY_REGION: ${{ secrets.CLOUD_DEPLOY_GCP_REGION }}
+  SKAFFOLD_VERSION: "2.16.0" # Or your preferred Skaffold version
+
+  # GAR Variables (use secrets)
+  # GAR_LOCATION: europe-west3
+  # GCP_PROJECT_ID: olehdevua-vr-nest
+  # GAR_REPOSITORY: vr-nest-repo
+
+permissions:
+  contents: 'read'   # To checkout code and verify tag
+  id-token: 'write'  # For Workload Identity Federation to GCP
+
+jobs:
+  validate-tag-and-identify-image:
+    name: Validate Tag and Identify Main Build
+    runs-on: ubuntu-latest
+    outputs:
+      # This will be the SHA-tagged image URI, which is the 'main build'
+      vr_back_image_uri_for_deploy: ${{ steps.identify_and_tag_image.outputs.image_uri_sha }}
+      release_git_tag: ${{ steps.get_git_tag.outputs.tag_name }}
+      # Add outputs for other services if needed
+
+    steps:
+      - name: Checkout code at tag with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history to verify branch ancestry accurately
+
+      - name: Get tag name
+        id: get_git_tag
+        run: echo "tag_name=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Verify tag is on main branch
+        run: |
+          echo "Checking if tag ${{ steps.get_git_tag.outputs.tag_name }} (commit ${{ github.sha }}) is on main branch..."
+          # Ensure main branch from origin is known locally
+          git fetch origin main:refs/remotes/origin/main
+          if git branch -r --contains ${{ github.sha }} | grep -qw 'origin/main'; then
+            echo "Tag ${{ steps.get_git_tag.outputs.tag_name }} is on the main branch. Proceeding."
+          else
+            echo "Error: Tag ${{ steps.get_git_tag.outputs.tag_name }} is NOT on the main branch. This workflow only deploys tags from main."
+            exit 1
+          fi
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }} # SA needs Artifact Registry Reader & Writer (for adding tags)
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Identify Main Build Image and Add Release Tag in GAR
+        id: identify_and_tag_image
+        run: |
+          COMMIT_SHA=${{ github.sha }} # This is the SHA of the commit the 'release-*' tag points to
+          RELEASE_GIT_TAG="${{ steps.get_git_tag.outputs.tag_name }}"
+
+          # This is the image URI that 'integration-tests.yaml' should have pushed from the main branch
+          MAIN_BUILD_IMAGE_URI_SHA="${{ secrets.GAR_LOCATION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GAR_REPOSITORY }}/${{ env.VR_BACK_IMAGE_NAME }}:${COMMIT_SHA}"
+          
+          # This is the new tag we want to add in GAR for human-readability (points to the same SHA image)
+          RELEASE_TAGGED_IMAGE_URI_IN_GAR="${{ secrets.GAR_LOCATION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GAR_REPOSITORY }}/${{ env.VR_BACK_IMAGE_NAME }}:${RELEASE_GIT_TAG}"
+
+          echo "Commit SHA for this release: ${COMMIT_SHA}"
+          echo "Expected main build image (SHA-tagged): ${MAIN_BUILD_IMAGE_URI_SHA}"
+          echo "Release tag to add in GAR: ${RELEASE_GIT_TAG}"
+
+          # Verify the SHA-tagged image exists (important!)
+          echo "Verifying existence of ${MAIN_BUILD_IMAGE_URI_SHA}..."
+          if ! gcloud container images describe "${MAIN_BUILD_IMAGE_URI_SHA}" --project="${{ secrets.GCP_PROJECT_ID }}" --quiet; then
+            echo "Error: The SHA-tagged image ${MAIN_BUILD_IMAGE_URI_SHA} was not found in GAR."
+            echo "Ensure your 'integration-tests.yaml' workflow successfully built and pushed this image from the 'main' branch for commit ${COMMIT_SHA}."
+            exit 1
+          fi
+          echo "SHA-tagged image found."
+
+          # Add the 'release-...' Git tag as an additional tag to the existing SHA-tagged image in GAR
+          echo "Adding tag '${RELEASE_GIT_TAG}' to image digest of ${MAIN_BUILD_IMAGE_URI_SHA} in GAR..."
+          gcloud container images add-tag "${MAIN_BUILD_IMAGE_URI_SHA}" "${RELEASE_TAGGED_IMAGE_URI_IN_GAR}" --project="${{ secrets.GCP_PROJECT_ID }}" --quiet
+          echo "Successfully added release tag in GAR. The image digest remains the same."
+
+          # For Cloud Deploy, we will use the immutable SHA-tagged image URI.
+          echo "image_uri_sha=${MAIN_BUILD_IMAGE_URI_SHA}" >> $GITHUB_OUTPUT
+          # Also output the actual image URI for clarity if needed elsewhere (though image_uri_sha is primary for deployment)
+          # echo "image_uri_release_tag_in_gar=${RELEASE_TAGGED_IMAGE_URI_IN_GAR}" >> $GITHUB_OUTPUT
+
+      # --- Add similar 'Identify Main Build Image and Add Release Tag in GAR' steps for other services ---
+      # - name: Identify Main Build for vr-identity and Add Release Tag
+      #   id: identify_and_tag_image_vr_identity
+      #   # ... similar logic ...
+      #   run: |
+      #     # ...
+      #     echo "image_uri_sha=URI_FOR_VR_IDENTITY_SHA" >> $GITHUB_OUTPUT
+
+  trigger-cloud-deploy-for-release:
+    name: Trigger Cloud Deploy for Release
+    needs: validate-tag-and-identify-image # Depends on successful validation and image identification
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'   # To checkout code for bundling (at the tag)
+      id-token: 'write'  # For Workload Identity Federation to GCP
+
+    steps:
+      - name: Checkout code at tag
+        uses: actions/checkout@v4
+        # This re-checkout ensures the source bundle (skaffold.yaml, helmfile.yaml etc.) is from the tag
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }} # SA needs Cloud Deploy Releaser & GCS Object Admin
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Create image_tags.env file
+        run: |
+          echo "Creating image_tags.env for release ${{ needs.validate-tag-and-identify-image.outputs.release_git_tag }}..."
+          echo "export VR_BACK_IMAGE_FULL='${{ needs.validate-tag-and-identify-image.outputs.vr_back_image_uri_for_deploy }}'" > ./image_tags.env
+          # If you have vr-identity and other images:
+          # if [ -n "${{ needs.validate-tag-and-identify-image.outputs.vr_identity_image_uri_for_deploy }}" ]; then
+          #   echo "export VR_IDENTITY_IMAGE_FULL='${{ needs.validate-tag-and-identify-image.outputs.vr_identity_image_uri_for_deploy }}'" >> ./image_tags.env
+          # fi
+          echo "Content of image_tags.env (using SHA-tagged images for deployment):"
+          cat ./image_tags.env
+
+      - name: Create source archive for Cloud Deploy
+        id: archive_source
+        run: |
+          TARBALL_NAME="source_bundle_tag_${{ needs.validate-tag-and-identify-image.outputs.release_git_tag }}.tar.gz"
+          tar -czf "${TARBALL_NAME}" . --exclude=".git" --exclude=".github" --exclude="${TARBALL_NAME}" --exclude="*.tar.gz"
+          echo "tarball_name=${TARBALL_NAME}" >> $GITHUB_OUTPUT
+
+      - name: Upload source archive to GCS Staging
+        id: upload_source
+        run: |
+          GCS_STAGING_BUCKET="gs://${{ secrets.GCP_PROJECT_ID }}_clouddeploy_staging" # Convention
+          GCS_SOURCE_PATH="${GCS_STAGING_BUCKET}/${{ env.CLOUD_DEPLOY_PIPELINE }}/${{ steps.archive_source.outputs.tarball_name }}"
+          gsutil cp "${{ steps.archive_source.outputs.tarball_name }}" "${GCS_SOURCE_PATH}"
+          echo "gcs_source_uri=${GCS_SOURCE_PATH}" >> $GITHUB_OUTPUT
+
+      - name: Create description for Cloud Deploy release
+        id: release_description
+        run: |
+          echo "description=Release deployment for tag ${{ needs.validate-tag-and-identify-image.outputs.release_git_tag }} (GHA Run ${{ github.run_id }})" >> $GITHUB_OUTPUT
+
+      - name: Create Cloud Deploy Release
+        run: |
+          RELEASE_NAME="rel-${{ needs.validate-tag-and-identify-image.outputs.release_git_tag }}-${{ github.run_id }}"
+          RELEASE_NAME=$(echo "${RELEASE_NAME}" | tr '/' '-' | tr -cs 'a-zA-Z0-9-' '-' | sed 's/^-*//;s/-*$//' | cut -c1-63) # Sanitize
+
+          gcloud deploy releases create "${RELEASE_NAME}" \
+            --delivery-pipeline="${{ env.CLOUD_DEPLOY_PIPELINE }}" \
+            --project="${{ secrets.GCP_PROJECT_ID }}" \
+            --region="${{ env.CLOUD_DEPLOY_REGION }}" \
+            --skaffold-version="${{ env.SKAFFOLD_VERSION }}" \
+            --description="${{ steps.release_description.outputs.description }}" \
+            --gcs-source="${{ steps.upload_source.outputs.gcs_source_uri }}"

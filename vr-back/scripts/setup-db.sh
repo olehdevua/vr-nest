@@ -23,11 +23,25 @@ setup_db () {
   # Crucially, GitHub Actions automatically configures DNS resolution within this job network.
   # It maps the service label (which is "postgres" in your workflow) to the internal IP address
   # of the service container within that specific network.
-  DATABASE_NAME="$database_name" \
-  DATABASE_HOST="$database_host" \
-  DATABASE_USER="$database_user" \
-  DATABASE_PASSWORD="$database_password" \
-  npm run migration:run
+
+  local dev_image=$(docker image ls vr-back:development -q)
+
+  if [ -z "$dev_image" ]; then
+    DATABASE_NAME="$database_name" \
+    DATABASE_HOST="$database_host" \
+    DATABASE_USER="$database_user" \
+    DATABASE_PASSWORD="$database_password" \
+    npm run migration:run
+  else
+    docker container run -t --rm --network=host \
+      -e DATABASE_NAME="$database_name" \
+      -e DATABASE_HOST="$database_host" \
+      -e DATABASE_USER="$database_user" \
+      -e DATABASE_PASSWORD="$database_password" \
+      vr-back:development npm run migration:run
+  fi
+
+
 }
 
 setup_db

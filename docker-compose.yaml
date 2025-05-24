@@ -4,9 +4,11 @@ services:
     build:
       context: ./vr-back
       dockerfile: Dockerfile
+      tags:
+        - vr-back:development
       target: development
     environment:
-      DATABASE_HOST: ${DATABASE_HOST:-localhost}
+      DATABASE_HOST: ${DATABASE_HOST:-10.22.0.1}
       DATABASE_PORT: ${DATABASE_PORT:-5432}
       DATABASE_USER: ${DATABASE_USER:-vr}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD:-deadbeef}
@@ -29,7 +31,7 @@ services:
       dockerfile: Dockerfile
       target: production
     environment:
-      DATABASE_HOST: ${DATABASE_HOST:-localhost}
+      DATABASE_HOST: ${DATABASE_HOST:-10.22.0.1}
       DATABASE_PORT: ${DATABASE_PORT:-5432}
       DATABASE_USER: ${DATABASE_USER:-vr}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD:-deadbeef}

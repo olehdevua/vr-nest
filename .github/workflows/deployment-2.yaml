@@ -1,0 +1,147 @@
+name: Create Release and Trigger Cloud Deploy
+
+on:
+  push:
+    tags:
+      - 'release-*' # Triggers on tags like release-v1.0.0, release-fix-user-auth, etc.
+
+env:
+  # Define image names - add more if you have multiple services in a release
+  VR_BACK_IMAGE_NAME: vr-back
+  # VR_IDENTITY_IMAGE_NAME: vr-identity # Example
+
+  # Cloud Deploy Variables (use secrets for actual values or define here if static)
+  CLOUD_DEPLOY_PIPELINE: ${{ secrets.CLOUD_DEPLOY_PIPELINE_NAME }} # e.g., your-delivery-pipeline
+  CLOUD_DEPLOY_REGION: ${{ secrets.CLOUD_DEPLOY_GCP_REGION }}   # e.g., europe-west1
+  SKAFFOLD_VERSION: "2.16.0" # Or your preferred Skaffold version supported by Cloud Deploy
+
+  # GAR Variables (use secrets)
+  # GAR_LOCATION: europe-west3
+  # GCP_PROJECT_ID: olehdevua-vr-nest
+  # GAR_REPOSITORY: vr-nest-repo
+
+permissions:
+  contents: 'read'   # To checkout the repository at the tag
+  id-token: 'write'  # For Workload Identity Federation to GCP
+
+jobs:
+  build-and-push-release-images:
+    name: Build and Push Release Images
+    runs-on: ubuntu-latest
+    outputs:
+      vr_back_image_uri: ${{ steps.build_push_vr_back.outputs.image_uri }}
+      # Add other image outputs here if needed
+      # vr_identity_image_uri: ${{ steps.build_push_vr_identity.outputs.image_uri }}
+
+    steps:
+      - name: Checkout code at tag
+        uses: actions/checkout@v4
+        # On tag pushes, actions/checkout automatically checks out the code at that tag.
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }} # SA with Artifact Registry Writer role
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Authorize Docker push to GAR
+        run: gcloud auth configure-docker ${{ secrets.GAR_LOCATION }}-docker.pkg.dev
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Extract Git Tag
+        id: get_tag
+        run: echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT # e.g., release-v1.0.0
+
+      - name: Build and Push vr-back for Release
+        id: build_push_vr_back
+        uses: docker/build-push-action@v5
+        with:
+          context: ./vr-back # Ensure this path is correct
+          target: production # Assuming a 'production' stage in your Dockerfile
+          push: true
+          tags: ${{ secrets.GAR_LOCATION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GAR_REPOSITORY }}/${{ env.VR_BACK_IMAGE_NAME }}:${{ steps.get_tag.outputs.tag }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: Set vr-back image URI output
+        run: |
+          IMAGE_URI="${{ secrets.GAR_LOCATION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GAR_REPOSITORY }}/${{ env.VR_BACK_IMAGE_NAME }}:${{ steps.get_tag.outputs.tag }}"
+          echo "Built and pushed release image: ${IMAGE_URI}"
+          echo "image_uri=${IMAGE_URI}" >> $GITHUB_OUTPUT
+
+      # --- Add similar 'Build and Push' steps for other services if they are part of this release ---
+      # - name: Build and Push vr-identity for Release
+      #   id: build_push_vr_identity
+      #   uses: docker/build-push-action@v5
+      #   # ... similar configuration ...
+
+  trigger-cloud-deploy:
+    name: Trigger Cloud Deploy for Release
+    needs: build-and-push-release-images # Ensures images are built and pushed first
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'   # To checkout code for bundling (at the tag)
+      id-token: 'write'  # For Workload Identity Federation to GCP
+
+    steps:
+      - name: Checkout code at tag
+        uses: actions/checkout@v4
+        # This re-checkout ensures the source bundle for Cloud Deploy is from the tag.
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }} # SA with Cloud Deploy Releaser & GCS Object Admin
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Create image_tags.env file
+        run: |
+          echo "Creating image_tags.env for release ${{ steps.get_tag.outputs.tag }}..." # Using tag from needs context would be better if directly accessible
+          echo "export VR_BACK_IMAGE_FULL='${{ needs.build-and-push-release-images.outputs.vr_back_image_uri }}'" > ./image_tags.env
+          # if [ -n "${{ needs.build-and-push-release-images.outputs.vr_identity_image_uri }}" ]; then
+          #   echo "export VR_IDENTITY_IMAGE_FULL='${{ needs.build-and-push-release-images.outputs.vr_identity_image_uri }}'" >> ./image_tags.env
+          # fi
+          echo "Content of image_tags.env:"
+          cat ./image_tags.env
+
+      - name: Create source archive for Cloud Deploy
+        id: archive_source
+        run: |
+          # Use GITHUB_REF_NAME to get the tag name directly for the tarball
+          TARBALL_NAME="source_bundle_${GITHUB_REF_NAME}.tar.gz"
+          tar -czf "${TARBALL_NAME}" . --exclude=".git" --exclude=".github" --exclude="${TARBALL_NAME}" --exclude="*.tar.gz"
+          echo "tarball_name=${TARBALL_NAME}" >> $GITHUB_OUTPUT
+
+      - name: Upload source archive to GCS Staging
+        id: upload_source
+        run: |
+          GCS_STAGING_BUCKET="gs://${{ secrets.GCP_PROJECT_ID }}_clouddeploy_staging" # Convention, ensure bucket exists
+          GCS_SOURCE_PATH="${GCS_STAGING_BUCKET}/${{ env.CLOUD_DEPLOY_PIPELINE }}/${{ steps.archive_source.outputs.tarball_name }}"
+          gsutil cp "${{ steps.archive_source.outputs.tarball_name }}" "${GCS_SOURCE_PATH}"
+          echo "gcs_source_uri=${GCS_SOURCE_PATH}" >> $GITHUB_OUTPUT
+
+      - name: Create description for Cloud Deploy release
+        id: release_description
+        run: |
+          echo "description=Release deployment for tag ${{ github.ref_name }} (GHA Run ${{ github.run_id }})" >> $GITHUB_OUTPUT
+
+      - name: Create Cloud Deploy Release
+        run: |
+          RELEASE_NAME="rel-${{ github.ref_name }}-${{ github.run_id }}"
+          RELEASE_NAME=$(echo "${RELEASE_NAME}" | tr '/' '-' | tr -cs 'a-zA-Z0-9-' '-' | sed 's/^-*//;s/-*$//' | cut -c1-63) # Sanitize and shorten
+
+          gcloud deploy releases create "${RELEASE_NAME}" \
+            --delivery-pipeline="${{ env.CLOUD_DEPLOY_PIPELINE }}" \
+            --project="${{ secrets.GCP_PROJECT_ID }}" \
+            --region="${{ env.CLOUD_DEPLOY_REGION }}" \
+            --skaffold-version="${{ env.SKAFFOLD_VERSION }}" \
+            --description="${{ steps.release_description.outputs.description }}" \
+            --gcs-source="${{ steps.upload_source.outputs.gcs_source_uri }}"
+            # The --images flag is not used here; image_tags.env handles passing image URIs

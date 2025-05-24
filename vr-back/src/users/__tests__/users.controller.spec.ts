@@ -8,6 +8,8 @@ import { UsersModule } from '../users.module';
 import { VRConfigService } from '../../core/modules/vr-config.module';
 import { TestConfigService } from './_utils';
 import { UserDto } from '../dto/user.dto';
+import { DataSource } from 'typeorm';
+import { User } from '../entities/user.entity';
 
 describe('UserController', () => {
   let module: TestingModule;
@@ -23,6 +25,9 @@ describe('UserController', () => {
 
     app = module.createNestApplication();
     await app.init();
+
+    const dataSource = module.get<DataSource>(DataSource);
+    await dataSource.getRepository(User).delete({});
   });
 
   afterAll(async () => {

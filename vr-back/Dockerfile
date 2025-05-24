@@ -16,8 +16,8 @@ LABEL app=vr-back
 
 FROM node:23-bookworm-slim AS development
 
-RUN apt update && apt install -y iproute2 procps \
-  && rm -rf /var/lib/apt/lists/*
+#RUN apt update && apt install -y iproute2 procps \
+#  && rm -rf /var/lib/apt/lists/*
 
 USER node
 WORKDIR /home/node/app

@@ -1,0 +1,18 @@
+apiVersion: v2
+name: vr-project-chart
+description: An umbrella Helm chart for the entire VR project.
+type: application # Or 'umbrella'
+version: 0.1.0    # Version of your umbrella chart
+appVersion: "1.0" # Version of your overall application
+
+# Dependencies (your microservice subcharts) will be listed here
+dependencies:
+  - name: vr-back # This must match the name of the subchart directory in 'charts/'
+    version: "0.1.0" # The version of your vr-back subchart
+    repository: "file://./charts/vr-back" # Points to the local subchart
+    condition: vr-back.enabled # Deploys vr-back only if vr-back.enabled is true in values
+  # When you add vr-identity:
+  # - name: vr-identity
+  #   version: "0.1.0"
+  #   repository: "file://./charts/vr-identity"
+  #   condition: vr-identity.enabled

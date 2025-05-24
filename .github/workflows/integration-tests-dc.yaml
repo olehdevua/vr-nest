@@ -1,4 +1,4 @@
-name: Integration Tests
+name: Integration Tests DC
 
 on:
   push:
@@ -41,40 +41,48 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Dev Docker image
+        uses: docker/build-push-action@v5
+        id: build_dev
+        continue-on-error: false
         with:
-          node-version: '22.x'
-          cache: 'npm'
-          cache-dependency-path: vr-back/package-lock.json
-
-      - name: Install backend dependencies
-        working-directory: ./vr-back # Run npm in the backend directory
-        run: npm ci
-
-      - name: Build backend application
-        working-directory: ./vr-back
-        run: npm run build # Assuming tests might run against the built code
+          context: ./vr-back
+          target: development
+          push: false
+          load: true
+          tags: vr-back:development
+          cache-from: type=gha # Enable GitHub Actions cache for Docker layers
+          cache-to: type=gha,mode=max
 
       - name: Setup test db
         working-directory: ./vr-back
+        continue-on-error: false
         env:
           DATABASE_HOST: localhost
           DATABASE_PORT: 5432
           DATABASE_USER: vr
           DATABASE_PASSWORD: deadbeef
           DATABASE_NAME: vr-back
-        run: npm run test:setup-db
+        run: |
+          docker compose ps
+          pwd
+          docker container ls --format 'table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.State}}\t{{.Names}}\t{{.Networks}}'
+          bash ./scripts/setup-test-db.sh
 
       - name: Run integration tests
         working-directory: ./vr-back
-        env:
-          DATABASE_HOST: localhost
-          DATABASE_PORT: 5432
-          DATABASE_USER: vr
-          DATABASE_PASSWORD: deadbeef
-          DATABASE_NAME: vr-back
-        run: npm run test
+        run: |
+          docker container run \
+            --network=host \
+            -e DATABASE_HOST=localhost \
+            -e DATABASE_PORT=5432 \
+            -e DATABASE_USER=vr \
+            -e DATABASE_PASSWORD=deadbeef \
+            -e DATABASE_NAME=vr-back \
+            ${{ steps.build_dev.outputs.imageid }} npm run test
 
       # Authenticate to Google Cloud AFTER tests pass
       - name: Authenticate to Google Cloud
@@ -93,9 +101,6 @@ jobs:
       # It takes a comma-separated list of GAR hostnames (format LOCATION-docker.pkg.dev).
       - name: Authorize Docker push
         run: gcloud auth configure-docker ${{ secrets.GAR_LOCATION }}-docker.pkg.dev
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
