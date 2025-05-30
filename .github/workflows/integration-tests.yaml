@@ -104,7 +104,7 @@ jobs:
           images: ${{ secrets.GAR_LOCATION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GAR_REPOSITORY }}/${{ env.VR_BACK_IMAGE_NAME }}
           tags: |
             type=sha # Add Git SHA tag
-            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }} # Add latest tag only for main branch
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }} # Add the latest tag only for the main branch
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5

@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "vr-back-chart.fullname" . }}
+  name: {{ include "vr-back.fullname" . }}
   labels:
-    {{- include "vr-back-chart.labels" . | nindent 4 }}
+    {{- include "vr-back.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "vr-back-chart.selectorLabels" . | nindent 6 }}
+      {{- include "vr-back.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,7 +18,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "vr-back-chart.labels" . | nindent 8 }}
+        {{- include "vr-back.labels" . | nindent 8 }}
         {{- with .Values.podLabels }}
         {{- toYaml . | nindent 8 }}
         {{- end }}
@@ -27,7 +27,7 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "vr-back-chart.serviceAccountName" . }}
+      serviceAccountName: {{ include "vr-back.serviceAccountName" . }}
       {{- with .Values.podSecurityContext }}
       securityContext:
         {{- toYaml . | nindent 8 }}
@@ -42,8 +42,29 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: {{ .Values.service.port }}
+              containerPort: {{ .Values.service.targetPort }}
               protocol: TCP
+          env:
+            - name: DATABASE_HOST
+              value: {{ .Values.env.DATABASE_HOST | quote }}
+            - name: DATABASE_PORT
+              value: {{ .Values.env.DATABASE_PORT | quote }}
+            - name: DATABASE_USER
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.databaseCredentialsSecret }}
+                  key: username
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.databaseCredentialsSecret }}
+                  key: password
+            - name: DATABASE_NAME
+              value: {{ .Values.env.DATABASE_NAME | quote }}
+            - name: PINO_LOGGER_PRETTY
+              value: {{ .Values.env.PINO_LOGGER_PRETTY | quote }}
+            - name: PINO_LOGGER_LEVEL
+              value: {{ .Values.env.PINO_LOGGER_LEVEL | quote }}
           {{- with .Values.livenessProbe }}
           livenessProbe:
             {{- toYaml . | nindent 12 }}

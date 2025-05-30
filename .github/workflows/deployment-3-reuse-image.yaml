@@ -6,9 +6,8 @@ on:
       - 'release-*' # Triggers on tags like release-v1.0.0, release-hotfix-abc
 
 env:
-  # Define image names - add more if you have multiple services in a release
   VR_BACK_IMAGE_NAME: vr-back
-  # VR_IDENTITY_IMAGE_NAME: vr-identity # Example for another service
+# VR_IDENTITY_IMAGE_NAME: vr-identity # Example for another service
 
   # Cloud Deploy Variables (use secrets for actual values)
   CLOUD_DEPLOY_PIPELINE: ${{ secrets.CLOUD_DEPLOY_PIPELINE_NAME }}

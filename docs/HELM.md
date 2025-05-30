@@ -343,35 +343,3 @@ kubectl apply -f ops/k3s/resources/traefik-podmonitor.yaml
 
 [instructions](https://github.com/prometheus-operator/kube-prometheus) on how
 to create & configure *Alertmanager* and *Prometheus instances* using the Operator.
-
-
-```bash
-typeorm migration:run -d dist/src/migrations-datasource-setup.js
-```
-Output
-```
-query: SELECT version()
-                query: SELECT * FROM current_schema()
-                                       query: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = 'public' AND "table_name" = 'migrations'
-         query: CREATE TABLE "migrations" ("id" SERIAL NOT NULL, "timestamp" bigint NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_8c82d7f52634
-0ab734260ea46be" PRIMARY KEY ("id"))
-  query failed: CREATE TABLE "migrations" ("id" SERIAL NOT NULL, "timestamp" bigint NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_8c82d
-7f526340ab734260ea46be" PRIMARY KEY ("id"))
-  error: error: permission denied for schema public
-Error during migration run:
-QueryFailedError: permission denied for schema public
-    at PostgresQueryRunner.query (/home/node/app/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:216:19)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async PostgresQueryRunner.executeQueries (/home/node/app/node_modules/typeorm/query-runner/BaseQueryRunner.js:425:13)
-    at async PostgresQueryRunner.createTable (/home/node/app/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:426:9)
-    at async MigrationExecutor.createMigrationsTableIfNotExist (/home/node/app/node_modules/typeorm/migration/MigrationExecutor.js:351:13)
-    at async MigrationExecutor.executePendingMigrations (/home/node/app/node_modules/typeorm/migration/MigrationExecutor.js:129:9)
-    at async DataSource.runMigrations (/home/node/app/node_modules/typeorm/data-source/DataSource.js:265:35)
-    at async Object.handler (/home/node/app/node_modules/typeorm/commands/MigrationRunCommand.js:68:13) {
-  query: 'CREATE TABLE "migrations" ("id" SERIAL NOT NULL, "timestamp" bigint NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_8c82d7f52
-6340ab734260ea46be" PRIMARY KEY ("id"))',
-  parameters: undefined,
-  driverError: error: permission denied for schema public
-```
-
-I can't create database. Is it because of "id" column type is 'uuid' and I didn't install 

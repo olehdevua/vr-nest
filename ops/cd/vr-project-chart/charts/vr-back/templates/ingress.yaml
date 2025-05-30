@@ -1,10 +1,15 @@
+# GKE's native Ingress controller primarily uses the `kubernetes.io/ingress.class annotation` (gce or gce-internal).
+# If you are using GKE's native Ingress, you'd put this annotation in Values.ingress.annotations and
+# potentially leave Values.ingress.className empty or ensure it doesn't conflict.
+# If you installed a different Ingress controller (like Nginx) on GKE, then you'd use ingressClassName.
+
 {{- if .Values.ingress.enabled -}}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ include "vr-back-chart.fullname" . }}
+  name: {{ include "vr-back.fullname" . }}
   labels:
-    {{- include "vr-back-chart.labels" . | nindent 4 }}
+    {{- include "vr-back.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
@@ -35,7 +40,7 @@ spec:
             {{- end }}
             backend:
               service:
-                name: {{ include "vr-back-chart.fullname" $ }}
+                name: {{ include "vr-back.fullname" $ }}
                 port:
                   number: {{ $.Values.service.port }}
           {{- end }}

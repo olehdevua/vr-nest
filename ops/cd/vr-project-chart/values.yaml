@@ -5,16 +5,15 @@
 
 vr-back:
   enabled: true # Set to true to deploy the vr-back service
-  # Override or set values for the vr-back subchart
   replicaCount: 2
   image:
     repository: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back
     tag: "latest" # Skaffold will override this
+
   # You can expose and override any value from vr-back's own values.yaml here
-  # service:
-  #   port: 8080
-  # configData:
-  #   CUSTOM_SETTING_FOR_VR_BACK: "value_from_umbrella"
+  service: { port: 8080 }
+  configData:
+    CUSTOM_SETTING_FOR_VR_BACK: "value_from_umbrella"
 
 vr-identity:
   enabled: false # Disabled by default, enable when ready

@@ -94,20 +94,20 @@ jobs:
         run: |
           echo "Creating image_tags.env..."
           echo "export VR_BACK_IMAGE_FULL='${{ needs.build-and-push.outputs.vr_back_image_uri }}'" > ./image_tags.env
-          # Uncomment and add other images as they are built
+
           # if [ -n "${{ needs.build-and-push.outputs.vr_identity_image_uri }}" ]; then
           #   echo "export VR_IDENTITY_IMAGE_FULL='${{ needs.build-and-push.outputs.vr_identity_image_uri }}'" >> ./image_tags.env
           # fi
+
           echo "Content of image_tags.env:"
           cat ./image_tags.env
 
+      # Creates a tarball that will contain your skaffold.yaml, helmfile setup, deploy script, and the new image_tags.env
       - name: Create source archive for Cloud Deploy
         id: archive_source
         run: |
-          # This tarball will contain your skaffold.yaml, helmfile setup, deploy script, and the new image_tags.env
-          # Exclude .git and .github to keep the bundle clean and small. Adjust as needed.
           TARBALL_NAME="source_bundle_${{ github.sha }}.tar.gz"
-          tar -czf "${TARBALL_NAME}" . --exclude=".git" --exclude=".github" --exclude="${TARBALL_NAME}"
+          tar -czf "${TARBALL_NAME}" -C ./ops/cd
           echo "tarball_name=${TARBALL_NAME}" >> $GITHUB_OUTPUT
 
       - name: Upload source archive to GCS Staging

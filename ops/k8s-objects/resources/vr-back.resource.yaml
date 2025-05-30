@@ -47,12 +47,12 @@ spec:
             - name: DATABASE_USER
               valueFrom:
                 secretKeyRef:
-                  name: postgres-secret
+                  name: pg-secret
                   key: username
             - name: DATABASE_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgres-secret
+                  name: pg-secret
                   key: password
             - name: DATABASE_NAME
               value: "vr-back"

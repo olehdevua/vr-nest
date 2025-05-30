@@ -1,21 +1,18 @@
 # https://cloud.google.com/deploy/docs/using-skaffold/getting-started-skaffold#have_generate_your_skaffoldyaml
-apiVersion: skaffold/v4beta7
+apiVersion: skaffold/v4beta13
 kind: Config
-# manifests:
-#   rawYaml: [ "vr-*" ]
-# deploy: { kubectl: {} }
 
 # build:
 #   artifacts:
 #     - image: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back
 #       # context: ../../vr-back/src # Specify context if not root
-#       # alias: vrBack # Optional alias for simpler setValueTemplates if needed
-#
-#   # - image: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-identity
-#   #   context: ./path/to/vr-identity/src
-#   #   alias: vrIdentity
+#       alias: vrBack # Optional alias for simpler setValueTemplates if needed
+##    - image: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-identity
+##      context: ./path/to/vr-identity/src
+##      alias: vrIdentity
 
 manifests:
+# rawYaml: [ "vr-*" ]
   helm:
     releases:
       - name: vr-project-chart # Helm release name for the entire project
@@ -31,7 +28,7 @@ manifests:
         #   image:
         #     repository: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back
         #     tag: "default-tag" # Skaffold will override this tag
-        #
+
         # If auto-injection doesn't work as expected or for more control:
         setValueTemplates:
           # For the vr-back service:
@@ -44,5 +41,69 @@ manifests:
           # When you add vr-identity (assuming its full image name):
           # "vr-identity.image.tag": "{{.TAGS.europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_identity}}"
           # "vr-identity.enabled": "true" # You might want to enable it via Skaffold too
+
         # setValues: # Use for static overrides not dependent on build artifacts
         #   "vr-back.replicaCount": 3
+
+# deploy: { kubectl: {} }
+
+
+apiVersion: skaffold/v4beta7
+kind: Config
+metadata:
+  name: vr-back-app
+
+build:
+  artifacts:
+    - image: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back # Your image
+      # Add your build context (e.g., local Dockerfile)
+      context: . # Assuming Dockerfile is in the root
+
+manifests:
+  helm:
+    releases:
+      - name: vr-back # Your Helm release name
+        chartPath: ./vr-back-chart # Path to your Helm chart
+        # Common values - Skaffold will override image.tag
+        # valuesFiles: # Optional: a base values file if you have one
+        #  - ./vr-back-chart/values.yaml
+        setValueTemplates:
+          image.repository: "{{.IMAGE_REPO_europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}"
+          image.tag: "{{.IMAGE_TAG_europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}@{{.IMAGE_DIGEST_europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}"
+        # For skaffold older versions:
+        # setValues:
+        #   image.repository: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back
+        #   image.tag: latest # Skaffold will override this during dev
+        # imageStrategy:
+        #   helm: {}
+
+# Profiles for different environments
+profiles:
+  - name: local-k3s
+    activation:
+      - kubeContext: k3s-desktop # Or whatever your k3s context is named
+    manifests:
+      helm:
+        releases:
+          - name: vr-back
+            chartPath: ./vr-back-chart
+            valuesFiles:
+              - ./helm-values/values-local-k3s.yaml # Specific values for local
+            # Skaffold handles image updates automatically, but ensure your Helm chart
+            # `values.yaml` has image.repository and image.tag fields.
+            # Skaffold's setValueTemplates (or older setValues/imageStrategy) will handle image updates.
+
+  - name: gke-dev
+    activation:
+      - kubeContext: gke_your-project-id_your-zone_your-cluster-name # Your GKE context
+    manifests:
+      helm:
+        releases:
+          - name: vr-back
+            chartPath: ./vr-back-chart
+            valuesFiles:
+              - ./helm-values/values-gke.yaml # Specific values for GKE
+            # Skaffold image handling as above
+
+# Default deploy configuration (can be overridden by profiles)
+deploy: { helm: {} } # Indicates Helm deployer, configurations are in manifests section or profiles.
