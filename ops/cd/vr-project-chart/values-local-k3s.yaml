@@ -1,0 +1,18 @@
+ingress:
+  enabled: true
+  # For k3s/Traefik, className might be "traefik" or empty if it's the default.
+  # Check your k3s Traefik setup. Often, no className is needed if Traefik is default.
+  className: "traefik" # Or leave empty if Traefik is default and handles Ingress without class
+  annotations:
+    # Traefik specific annotations, e.g., for entrypoints or middlewares
+    traefik.ingress.kubernetes.io/router.entrypoints: "web" # or "websecure" if using HTTPS
+    # Add other traefik annotations if needed
+  hosts:
+    - host: "vr-back.127.0.0.1.nip.io" # Or your local DNS name like vr-back.local
+      paths:
+        - path: /
+          pathType: Prefix
+  # tls: # Configure if you have local TLS setup (e.g., mkcert)
+  #   - secretName: vr-back-local-tls
+  #     hosts:
+  #       - "vr-back.127.0.0.1.nip.io"

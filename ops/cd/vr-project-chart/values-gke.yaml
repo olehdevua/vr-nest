@@ -1,0 +1,24 @@
+ingress:
+  enabled: true
+  # For GKE's own Ingress, you specify it via annotations.
+  # The `ingressClassName` field is NOT used for GKE's default Ingress.
+  # className: "" # Leave empty or ensure it doesn't conflict if GKE annotation is used.
+  annotations:
+    kubernetes.io/ingress.class: "gce" # For GKE external HTTP(S) Load Balancer
+    # Or "gce-internal" for internal LB
+    # To use a static IP (optional, create static IP in GCP first):
+    # kubernetes.io/ingress.global-static-ip-name: "your-gcp-static-ip-name"
+    # To use Google-managed certificates (optional, set up ManagedCertificate CRD):
+    # networking.gke.io/managed-certificates: "your-managed-cert-name"
+    # Or if using cert-manager:
+    # cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  hosts:
+    - host: "vr-back.your-gke-domain.com" # Your actual domain pointing to GKE LB IP
+      paths:
+        - path: /
+          pathType: ImplementationSpecific # GKE often uses ImplementationSpecific or Prefix
+  tls:
+    - secretName: vr-back-gke-tls # Name of the K8s secret containing the TLS cert
+      hosts:
+        - "vr-back.your-gke-domain.com"
+        # Ensure this secret is created (e.g., by cert-manager or manually)

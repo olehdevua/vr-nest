@@ -2,6 +2,9 @@
 apiVersion: skaffold/v4beta13
 kind: Config
 
+metadata:
+  name: vr-nest
+
 # build:
 #   artifacts:
 #     - image: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back
@@ -37,6 +40,8 @@ manifests:
           # refers to the tag of the artifact with that specific image name.
           # If you used an alias like 'vrBack' in the build section: '{{.IMAGE_TAG_vrBack}}'
           "vr-back.image.tag": "{{.TAGS.europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}" # Or use alias if defined
+#         image.repository:    "{{.IMAGE_REPO_europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}"
+#         image.tag:           "{{.IMAGE_TAG_europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}@{{.IMAGE_DIGEST_europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}"
 
           # When you add vr-identity (assuming its full image name):
           # "vr-identity.image.tag": "{{.TAGS.europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_identity}}"
@@ -44,38 +49,17 @@ manifests:
 
         # setValues: # Use for static overrides not dependent on build artifacts
         #   "vr-back.replicaCount": 3
+        #   vr-back.image.repository: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back
+        #   vr-back.image.tag: latest # Skaffold will override this during dev
 
-# deploy: { kubectl: {} }
-
-
-apiVersion: skaffold/v4beta7
-kind: Config
-metadata:
-  name: vr-back-app
-
-build:
-  artifacts:
-    - image: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back # Your image
-      # Add your build context (e.g., local Dockerfile)
-      context: . # Assuming Dockerfile is in the root
-
-manifests:
-  helm:
-    releases:
-      - name: vr-back # Your Helm release name
-        chartPath: ./vr-back-chart # Path to your Helm chart
-        # Common values - Skaffold will override image.tag
-        # valuesFiles: # Optional: a base values file if you have one
-        #  - ./vr-back-chart/values.yaml
-        setValueTemplates:
-          image.repository: "{{.IMAGE_REPO_europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}"
-          image.tag: "{{.IMAGE_TAG_europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}@{{.IMAGE_DIGEST_europe_west3_docker_pkg_dev_olehdevua_vr_nest_vr_nest_repo_vr_back}}"
-        # For skaffold older versions:
-        # setValues:
-        #   image.repository: europe-west3-docker.pkg.dev/olehdevua-vr-nest/vr-nest-repo/vr-back
-        #   image.tag: latest # Skaffold will override this during dev
         # imageStrategy:
         #   helm: {}
+
+        # skipBuildDependencies: false # Or true if subcharts are fetched by 'helm dependency build'
+
+        # packaged: # Consider if you are packaging the chart first
+        #   version: "" # Skaffold can package it
+        #   appVersion: ""
 
 # Profiles for different environments
 profiles:
@@ -85,10 +69,10 @@ profiles:
     manifests:
       helm:
         releases:
-          - name: vr-back
-            chartPath: ./vr-back-chart
+          - name: vr-project-chart
+            chartPath: ./vr-project-chart
             valuesFiles:
-              - ./helm-values/values-local-k3s.yaml # Specific values for local
+              - ./vr-project-chart/values-local-k3s.yaml # Specific values for local
             # Skaffold handles image updates automatically, but ensure your Helm chart
             # `values.yaml` has image.repository and image.tag fields.
             # Skaffold's setValueTemplates (or older setValues/imageStrategy) will handle image updates.
@@ -99,11 +83,13 @@ profiles:
     manifests:
       helm:
         releases:
-          - name: vr-back
-            chartPath: ./vr-back-chart
+          - name: vr-project-chart
+            chartPath: ./vr-project-chart
             valuesFiles:
-              - ./helm-values/values-gke.yaml # Specific values for GKE
+              - ./vr-project-chart/values-gke.yaml # Specific values for GKE
             # Skaffold image handling as above
 
 # Default deploy configuration (can be overridden by profiles)
-deploy: { helm: {} } # Indicates Helm deployer, configurations are in manifests section or profiles.
+deploy: { helm: {} } # Indicates Helm deployer, configurations are in the manifests section or profiles.
+
+# deploy: { kubectl: {} }

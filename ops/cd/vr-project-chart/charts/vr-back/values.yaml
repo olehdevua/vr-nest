@@ -59,16 +59,36 @@ service:
 # https://kubernetes.io/docs/concepts/services-networking/ingress/
 ingress:
   enabled: false
-  className: ""
+  # For GKE, you'll typically use annotations like `kubernetes.io/ingress.class: "gce"`
+  # or `kubernetes.io/ingress.class: "gce-internal"`.
+  # GKE documentation states that for versions 1.18+, you must use the annotation and not `spec.ingressClassName`
+  # for GKE-managed Ingresses.
+  # However, for non-GKE Ingress controllers running on GKE (like Nginx or Traefik you install yourself),
+  # you would use `spec.ingressClassName`.
+  # Since your primary goal for GKE is likely using its native Ingress, we'll cater to the annotation method,
+  # but className can still be used if you deploy a custom controller.
+  #
+  # For k3s with Traefik, if Traefik is the default and configured to watch Ingresses without a class,
+  # you might leave className empty.
+  # If you need to be explicit or have multiple Ingress controllers,
+  # you'd set it to traefik (or whatever class Traefik is configured to use).
+  className: "" # IMPORTANT: Override per environment (GKE vs k3s)
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/ingress.class: gce
     # kubernetes.io/tls-acme: "true"
+    # gke:
+    #   kubernetes.io/ingress.global-static-ip-name: "your-static-ip-name" # Example GKE annotation
+    #   networking.gke.io/managed-certificates: "your-managed-cert-name"
+    # traefik:
+    #   traefik.ingress.kubernetes.io/router.entrypoints: "websecure" # Example Traefik annotation
+    #   traefik.ingress.kubernetes.io/router.tls: "true"
   hosts:
-    - host: chart-example.local
+    - host: chart-example.local # Override with your actual domain
       paths:
         - path: /
-          pathType: ImplementationSpecific
+          pathType: ImplementationSpecific # Or Prefix, Exact
+          tls: [ ]
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
