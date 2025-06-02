@@ -2,11 +2,8 @@ name: Build, Push to GAR, and Trigger Cloud Deploy
 
 on:
   push:
-    tags:
-      - 'release-*' # Triggers on tags like release-v1.0.0, release-fix-user-auth, etc.
-# push:
-#   branches:
-#     - main # Or your release trigger
+    tags: [ 'release-*' ] # Triggers on tags like release-v1.0.0, release-fix-user-auth, etc.
+#   branches: [ - main ] # Or your release trigger
 
 env:
   VR_BACK_IMAGE_NAME: vr-back
@@ -16,7 +13,6 @@ env:
   CLOUD_DEPLOY_REGION: europe-west1 # Your Cloud Deploy region (e.g., us-central1, europe-west1)
   SKAFFOLD_VERSION: "2.16.0" # Or your desired Skaffold version compatible with Cloud Deploy
 
-  # Workload Identity Federation (WIF) details - configure these in GitHub secrets
   # GCLOUD_WIF_PROVIDER: projects/${{ env.PROJECT_ID }}/locations/global/workloadIdentityPools/YOUR_WIF_POOL/providers/YOUR_WIF_PROVIDER
   # GCLOUD_SERVICE_ACCOUNT: your-github-actions-sa@${{ env.PROJECT_ID }}.iam.gserviceaccount.com
 
@@ -137,11 +133,9 @@ jobs:
           gcloud deploy releases create "${RELEASE_NAME}" \
             --delivery-pipeline="${{ env.CLOUD_DEPLOY_PIPELINE }}" \
             --project="${{ secrets.GCP_PROJECT_ID }}" \
-            --region="${{ env.CLOUD_DEPLOY_REGION }}" \
+            --region="${{ secrets.GAR_LOCATION }}" \
             --skaffold-version="${{ env.SKAFFOLD_VERSION }}" \
             --description="${{ steps.release_description.outputs.description }}" \
             --gcs-source="${{ steps.upload_source.outputs.gcs_source_uri }}"
             # Note: We are NOT using the --images flag here.
-            # The image information is now bundled inside the source via image_tags.env    
-    
-    
+            # The image information is now bundled inside the source via image_tags.env

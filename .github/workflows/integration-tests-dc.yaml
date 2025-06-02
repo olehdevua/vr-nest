@@ -47,7 +47,6 @@ jobs:
       - name: Build Dev Docker image
         uses: docker/build-push-action@v5
         id: build_dev
-        continue-on-error: false
         with:
           context: ./vr-back
           target: development
