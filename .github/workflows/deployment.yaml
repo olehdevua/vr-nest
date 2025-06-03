@@ -3,7 +3,7 @@ name: Build, Push to GAR, and Trigger Cloud Deploy
 on:
   push:
     tags: [ 'release-*' ] # Triggers on tags like release-v1.0.0, release-fix-user-auth, etc.
-#   branches: [ - main ] # Or your release trigger
+#   branches: [ - main ]  # Or your release trigger
 
 env:
   VR_BACK_IMAGE_NAME: vr-back
