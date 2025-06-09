@@ -1,0 +1,79 @@
+name: test.yaml
+
+on:
+  workflow_call: {}
+#   inputs:
+#     hz:
+#       required: false
+#       type: string
+#   secrets:
+#     FOO:
+#       required: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    services: # service containers to run with the job
+      postgres:
+        image: postgres:17-bookworm
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        # Set health checks to wait until postgres has started
+        # https://docs.docker.com/reference/cli/docker/container/create/#options
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          # We don't need to specify a host port; GitHub Actions maps it
+          # and makes it accessible via the service label hostname ('postgres') on port 5432
+          - 5432:5432
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Build Dev Docker image
+        uses: docker/build-push-action@v5
+        id: build_dev
+        with:
+          context: ./vr-back
+          target: development
+          push: false
+          load: true
+          tags: vr-back:development
+          cache-from: type=gha # Enable GitHub Actions cache for Docker layers
+          cache-to: type=gha,mode=max
+
+      - name: Setup test db
+        working-directory: ./vr-back
+        env:
+          DATABASE_HOST: localhost
+          DATABASE_PORT: 5432
+          DATABASE_USER: vr
+          DATABASE_PASSWORD: deadbeef
+          DATABASE_NAME: vr-back
+        run: |
+          docker compose ps
+          pwd
+          docker container ls --format 'table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.State}}\t{{.Names}}\t{{.Networks}}'
+          bash ./scripts/setup-test-db.sh
+
+      - name: Run integration tests
+        working-directory: ./vr-back
+        run: |
+          docker container run \
+            --network=host \
+            -e DATABASE_HOST=localhost \
+            -e DATABASE_PORT=5432 \
+            -e DATABASE_USER=vr \
+            -e DATABASE_PASSWORD=deadbeef \
+            -e DATABASE_NAME=vr-back \
+            ${{ steps.build_dev.outputs.imageid }} npm run test
+

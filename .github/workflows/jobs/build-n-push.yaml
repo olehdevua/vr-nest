@@ -1,0 +1,56 @@
+name: Build and Push Images
+
+on:
+  workflow_call:
+    secrets:
+      GCP_WORKLOAD_IDENTITY_PROVIDER: { required: true }
+      GCP_SERVICE_ACCOUNT: { required: true }
+      GAR_LOCATION: { required: true }
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write' # Required for Workload Identity Federation
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+      # Configure Docker to use gcloud credential helper
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      # Configures the Docker client to use gcloud credentials
+      # (obtained via WIF in the previous step) to authenticate with GAR Docker repositories.
+      # It takes a comma-separated list of GAR hostnames (format LOCATION-docker.pkg.dev).
+      - name: Authorize Docker push
+        run: gcloud auth configure-docker ${{ secrets.GAR_LOCATION }}-docker.pkg.dev
+
+      # notes/gemini/gemini-gh.md#1-q-why-use-docker-metadata-action-n-build-push-action
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ secrets.GAR_LOCATION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GAR_REPOSITORY }}/${{ env.VR_BACK_IMAGE_NAME }}
+          tags: |
+            type=sha # Add Git SHA tag
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }} # Add latest tag only for main branch
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./vr-back # Path to the vr-back directory
+          target: production # Build the production stage from Dockerfile
+          push: true # Push the image
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha # Enable GitHub Actions cache for Docker layers
+          cache-to: type=gha,mode=max
