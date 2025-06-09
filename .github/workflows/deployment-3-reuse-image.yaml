@@ -2,8 +2,7 @@ name: Production Release via Tag on Main
 
 on:
   push:
-    tags:
-      - 'release-*' # Triggers on tags like release-v1.0.0, release-hotfix-abc
+    tags: [ 'release-*' ] # Triggers on tags like release-v1.0.0, release-fix-user-auth, etc.
 
 env:
   VR_BACK_IMAGE_NAME: vr-back

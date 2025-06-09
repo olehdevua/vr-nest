@@ -11,10 +11,10 @@ env:
 
 jobs:
   call-test:
-    uses: ./.github/workflows/jobs/test.yaml
+    uses: ./.github/workflows/job-test.yaml
 
   call-build-and-push:
-    uses: ./.github/workflows/jobs/build-n-push.yaml
+    uses: ./.github/workflows/job-build-n-push.yaml
     needs: call-test
     secrets:
       GCP_WORKLOAD_IDENTITY_PROVIDER: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
