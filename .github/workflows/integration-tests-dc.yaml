@@ -16,6 +16,9 @@ jobs:
   call-build-and-push:
     uses: ./.github/workflows/job-build-n-push.yaml
     needs: call-test
+    permissions:
+      id-token: write
+      contents: read
     secrets:
       GCP_WORKLOAD_IDENTITY_PROVIDER: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
       GCP_SERVICE_ACCOUNT: ${{ secrets.GCP_SERVICE_ACCOUNT }}
