@@ -6,6 +6,8 @@ on:
       GCP_WORKLOAD_IDENTITY_PROVIDER: { required: true }
       GCP_SERVICE_ACCOUNT: { required: true }
       GAR_LOCATION: { required: true }
+      GCP_PROJECT_ID: { required: true }
+      GAR_REPOSITORY: { required: true }
 
 jobs:
   build-and-push:
