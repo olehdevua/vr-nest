@@ -9,6 +9,9 @@ on:
       GCP_PROJECT_ID: { required: true }
       GAR_REPOSITORY: { required: true }
 
+env:
+  VR_BACK_IMAGE_NAME: vr-back
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
