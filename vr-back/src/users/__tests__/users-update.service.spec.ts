@@ -1,4 +1,4 @@
-import { v1 as uuidV1 } from 'uuid';
+import { v7 as uuid } from 'uuid';
 import { Test, TestingModule } from '@nestjs/testing';
 import { DataSource } from 'typeorm';
 import { INestApplication } from '@nestjs/common';
@@ -37,7 +37,7 @@ describe('UsersUpdateService', () => {
   });
 
   it('should update user', async () => {
-    const userId = uuidV1();
+    const userId = uuid();
 
     const user = await User.create({
       email: 'user@email.com',

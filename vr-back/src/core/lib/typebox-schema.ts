@@ -5,6 +5,9 @@ import { Type } from '@nestjs/common';
 import { FormatRegistry } from '@sinclair/typebox';
 import { isEmail, isStrongPassword, isUUID } from 'validator';
 
+// TODO: consider an attempt of using `SetMetadata` from `@nestjs/common`
+// @see [Reflection](https://docs.nestjs.com/fundamentals/execution-context#reflection-and-metadata)
+
 /**
  * https://docs.nestjs.com/controllers#request-payloads
  *
