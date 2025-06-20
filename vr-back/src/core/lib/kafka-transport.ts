@@ -1,28 +1,30 @@
 import {
-  Server,
+  /**
   CustomTransportStrategy,
   Transport,
+  */
+  Server,
   ReadPacket,
   WritePacket,
 } from '@nestjs/microservices';
-import { Consumer, ConsumerOptions, Message } from '@platformatic/kafka'; // Replace with your actual library
-import { Observable, BehaviorSubject } from 'rxjs';
+import * as K from '@platformatic/kafka';
 import { lastValueFrom } from 'rxjs';
-import { EventEmitter } from 'events'; // Native Node.js event emitter
+import { EventEmitter } from 'events';
+import * as hwp from 'hwp';
 
 // Define custom status strings for clarity
 type KafkaServerStatus = 'CONNECTED' | 'DISCONNECTED' | 'CONNECTING';
 
 export class CustomKafkaServer extends Server {
   // The underlying client instance from your chosen library
-  public client: Consumer;
+  public consumer: K.Consumer;
 
   // An event emitter to satisfy the abstract `on` method
   private readonly emitter = new EventEmitter();
 
   constructor(
     private readonly options: {
-      client: ConsumerOptions<
+      client: K.ConsumerOptions<
         Buffer<ArrayBufferLike>,
         Buffer<ArrayBufferLike>,
         Buffer<ArrayBufferLike>,
@@ -34,7 +36,7 @@ export class CustomKafkaServer extends Server {
     super();
 
     // Instantiate the underlying client for your library
-    this.client = new Consumer(this.options.client);
+    this.consumer = new K.Consumer(this.options.client);
 
     // Use the initializeSerializer/Deserializer methods provided by the base Server class
     this.initializeSerializer(options);
@@ -45,15 +47,22 @@ export class CustomKafkaServer extends Server {
    * The core method to start the server. It connects to the Kafka client,
    * subscribes to topics, and starts listening for messages.
    */
-  public async listen(callback: () => void): Promise<void> {
+  public async listen(cb: () => void): Promise<void> {
     try {
       // Use the protected _status$ subject from the base Server class
       this._status$.next('CONNECTING' as KafkaServerStatus);
-      await this.client.connect();
+
+      const stream = await this.consumer.consume({
+        autocommit: true,
+        topics: ['my-topic'],
+        sessionTimeout: 10000,
+        heartbeatInterval: 500,
+      });
+
       this._status$.next('CONNECTED' as KafkaServerStatus);
 
       // Define how to handle incoming messages
-      const messageHandler = async (message: Message) => {
+      const messageHandler = (message: K.Message) => {
         try {
           // Use the deserializer initialized in the constructor
           const packet = this.deserializer.deserialize(
@@ -68,11 +77,9 @@ export class CustomKafkaServer extends Server {
         }
       };
 
-      // Subscribe to topics using your library's method
-      await this.client.subscribe({ topic: 'my-topic' }, messageHandler);
+      await hwp.forEach(stream, messageHandler);
 
-      // Signal to NestJS that the microservice is ready
-      callback();
+      cb(); // Signal to NestJS that the microservice is ready
     } catch (err) {
       this.logger.error('Failed to connect to Kafka', err);
       // Use the protected _status$ subject to broadcast errors
@@ -86,8 +93,8 @@ export class CustomKafkaServer extends Server {
    * Closes the connection to the message broker.
    */
   public async close(): Promise<void> {
-    if (this.client) {
-      await this.client.disconnect();
+    if (this.consumer) {
+      await this.consumer.close();
     }
     this._status$.next('DISCONNECTED' as KafkaServerStatus);
     this._status$.complete();
@@ -97,7 +104,7 @@ export class CustomKafkaServer extends Server {
    * Returns the underlying Kafka client instance.
    */
   public unwrap<T>(): T {
-    return this.client as T;
+    return this.consumer as T;
   }
 
   /**

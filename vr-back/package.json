@@ -50,6 +50,7 @@
     "@platformatic/kafka": "^1.6.0",
     "@sinclair/typebox": "^0.34.33",
     "class-transformer": "^0.5.1",
+    "hwp": "^0.4.1",
     "nestjs-pino": "^4.4.0",
     "pg": "^8.14.1",
     "pino-http": "^10.4.0",
