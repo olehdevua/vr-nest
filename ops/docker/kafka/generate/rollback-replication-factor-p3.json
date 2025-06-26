@@ -1,0 +1,8117 @@
+{
+  "version": 1,
+  "partitions": [
+    {
+      "topic": "__consumer_offsets",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 24,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 25,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 26,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 27,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 28,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 29,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 30,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 31,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 32,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 33,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 34,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 35,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 36,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 37,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 38,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 39,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 40,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 41,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 42,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 43,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 44,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 45,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 46,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 47,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 48,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "__consumer_offsets",
+      "partition": 49,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "abstract-custom-check",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-1",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "access-keys-init-2",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-3",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "access-keys-init-4",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "access-keys-init-5",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "access-keys-init-6",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "access-keys-init-7",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "arn-cleanup",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "atom-abstract-device-subscription",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "cloud-action",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-device-list-report",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-info-updated",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-raw-command",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-activation",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "controller-resubscription-refresh",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "custom-notifications-input",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entity-reindex",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "datastash-entry-index",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-check",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "dfu-upgrade",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "energy-metrics-input",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-critical",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-high",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-low",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "event-new-medium",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "ezlo-camera-integration",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "hub-event",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "kafka-test",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "live-upgrade-check",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "meshene-run-scene",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-firmware-upgrade-status",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-ip-location-report",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nma-controller-report",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-critical",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-high",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-low",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-android-medium",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-critical",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-high",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-low",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-email-medium",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-critical",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-high",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-low",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-input-medium",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-critical",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-high",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-low",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-ios-medium",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-critical",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-high",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-low",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-sms-medium",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 0,
+      "replicas": [1, 2, 0],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 1,
+      "replicas": [2, 0, 1],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 2,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 3,
+      "replicas": [1, 0, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 4,
+      "replicas": [2, 1, 0],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 5,
+      "replicas": [0, 2, 1],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 6,
+      "replicas": [1, 2, 0],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 7,
+      "replicas": [2, 0, 1],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 8,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 9,
+      "replicas": [1, 0, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 10,
+      "replicas": [2, 1, 0],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 11,
+      "replicas": [0, 2, 1],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 12,
+      "replicas": [1, 2, 0],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 13,
+      "replicas": [2, 0, 1],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 14,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 15,
+      "replicas": [1, 0, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 16,
+      "replicas": [2, 1, 0],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 17,
+      "replicas": [0, 2, 1],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 18,
+      "replicas": [1, 2, 0],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 19,
+      "replicas": [2, 0, 1],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 20,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 21,
+      "replicas": [1, 0, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 22,
+      "replicas": [2, 1, 0],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-timings",
+      "partition": 23,
+      "replicas": [0, 2, 1],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-list",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "notification-todb-logs",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-integration-update",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "nucal-paas-user-config-update",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version":1,
+  "partitions":[
+    {"topic":"__consumer_offsets","partition":0,"replicas":[0,1,2]},
+    {"topic":"__consumer_offsets","partition":-1,"replicas":[0,1,2]},
+    {"topic":"abstract-custom-check","partition":0,"replicas":[0,1,2]},
+    {"topic":"abstract-custom-check","partition":-1,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-1","partition":0,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-1","partition":-1,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-2","partition":0,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-2","partition":-1,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-3","partition":0,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-3","partition":-1,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-4","partition":0,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-4","partition":-1,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-5","partition":0,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-5","partition":-1,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-6","partition":0,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-6","partition":-1,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-7","partition":0,"replicas":[0,1,2]},
+    {"topic":"access-keys-init-7","partition":-1,"replicas":[0,1,2]}
+  ]
+}

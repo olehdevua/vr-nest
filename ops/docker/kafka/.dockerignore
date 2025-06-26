@@ -1,0 +1,4 @@
+*
+!config/server-tmpl.properties
+!config/zookeeper.properties
+!docker-entrypoint.sh

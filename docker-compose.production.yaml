@@ -1,0 +1,10 @@
+services:
+  vr-back:
+    build:
+      context: ./vr-back
+      dockerfile: Dockerfile
+      target: production
+    environment:
+      DATABASE_PORT: ${DATABASE_PORT:-5432}
+      DATABASE_USER: ${DATABASE_USER:-vr}
+      DATABASE_NAME: ${DATABASE_NAME:-vr-back}

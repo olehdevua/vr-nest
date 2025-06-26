@@ -1,6 +1,7 @@
 services:
   vr-back:
     container_name: vr-back
+    labels: { "project": "vr-nest", service: vr-back }
     build:
       context: ./vr-back
       dockerfile: Dockerfile
@@ -24,24 +25,9 @@ services:
     networks:
       vr: { ipv4_address: 10.22.10.1 }
 
-  vr-back-production:
-    container_name: vr-back-production
-    build:
-      context: ./vr-back
-      dockerfile: Dockerfile
-      target: production
-    environment:
-      DATABASE_HOST: ${DATABASE_HOST:-10.22.0.1}
-      DATABASE_PORT: ${DATABASE_PORT:-5432}
-      DATABASE_USER: ${DATABASE_USER:-vr}
-      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-deadbeef}
-      DATABASE_NAME: ${DATABASE_NAME:-vr-back}
-    networks:
-      vr:
-        ipv4_address: 10.22.10.2
-
   vr-postgres:
     container_name: vr-postgres
+    labels: { "project": "vr-nest", service: vr-postgres }
     image: postgres:17-bookworm
     environment:
       POSTGRES_PASSWORD: postgres
@@ -60,12 +46,83 @@ services:
       PGADMIN_DEFAULT_EMAIL: olehdevua@gmail.com
       PGADMIN_DEFAULT_PASSWORD: deadbeef
     networks:
-      vr:
-        ipv4_address: 10.22.20.10
+      vr: { ipv4_address: 10.22.20.10 }
+
+  kafka-0:
+    build:
+      context: ./ops/docker/kafka
+      dockerfile: Dockerfile
+    labels: { "project": "vr-nest", service: kafka }
+    environment:
+      KAFKA_ID: 0
+      ZOOKEEPER_HOST: zookeeper
+    command: ["./bin/kafka-server-start.sh", "./config/server.properties"]
+    volumes: ["kafka-0:/opt/kafka-log-files"]
+    networks:
+      vr: { ipv4_address: 10.22.30.0 }
+    depends_on: ["zookeeper", "kafka-1", "kafka-2"]
+
+  kafka-1:
+    build:
+      context: ./ops/docker/kafka
+      dockerfile: Dockerfile
+    labels: { "project": "vr-new", service: kafka }
+    environment:
+      KAFKA_ID: 1
+      ZOOKEEPER_HOST: zookeeper
+    command: ["./bin/kafka-server-start.sh", "./config/server.properties"]
+    volumes: ["kafka-1:/opt/kafka-log-files"]
+    networks:
+      vr: { ipv4_address: 10.22.30.1 }
+    depends_on: ["zookeeper"]
+
+  kafka-2:
+    build:
+      context: ./ops/docker/kafka
+      dockerfile: Dockerfile
+    labels: { "project": "vr-new", service: kafka }
+    environment:
+      KAFKA_ID: 2
+      ZOOKEEPER_HOST: zookeeper
+    command: ["./bin/kafka-server-start.sh", "./config/server.properties"]
+    volumes: ["kafka-2:/opt/kafka-log-files"]
+    networks:
+      vr: { ipv4_address: 10.22.30.2 }
+    depends_on: ["zookeeper"]
+
+  zookeeper:
+    build:
+      context: ./ops/docker/kafka
+      dockerfile: Dockerfile
+    labels: { "project": "vr-nest", service: kafka }
+    command: ["./bin/zookeeper-server-start.sh", "./config/zookeeper.properties"]
+    volumes: ["zookeeper:/opt/zookeeper-snapshot"]
+    networks:
+      vr: { ipv4_address: 10.22.30.100 }
+
+  kconsole:
+    container_name: kconsole
+    image: docker.redpanda.com/redpandadata/console:latest
+    labels: { "project": "vr-new", service: kafka }
+    environment:
+      KAFKA_BROKERS: kafka-0,kafka-1,kafka-2
+      SERVER_LISTENPORT: 8090
+    networks:
+      vr: { ipv4_address: 10.22.30.110 }
+    depends_on: ["kafka-0"]
 
 volumes:
   vr_pg_data:
     name: vr_pg_data
+    labels: { "project": "vr-nest", service: vr-postgres }
+  zookeeper:
+    labels: { "project": "vr-nest", service: kafka }
+  kafka-0:
+    labels: { "project": "vr-nest", service: kafka }
+  kafka-1:
+    labels: { "project": "vr-nest", service: kafka }
+  kafka-2:
+    labels: { "project": "vr-nest", service: kafka }
 
 networks:
   vr:

@@ -1,0 +1,1205 @@
+{
+  "version": 1,
+  "partitions": [
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-image-128",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 24,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 25,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 26,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 27,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 28,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 29,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 30,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 31,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 32,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 33,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 34,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 35,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 36,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 37,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 38,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 39,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 40,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 41,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 42,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 43,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 44,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 45,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 46,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 47,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 48,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 49,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 50,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 51,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 52,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 53,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 54,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 55,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 56,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 57,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 58,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 59,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 60,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 61,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 62,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 63,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 64,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 65,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 66,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 67,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 68,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 69,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 70,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 71,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 72,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 73,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 74,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 75,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 76,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 77,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 78,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 79,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 80,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 81,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 82,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 83,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 84,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 85,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 86,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 87,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 88,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 89,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 90,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 91,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 92,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 93,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 94,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 95,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 96,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 97,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 98,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 99,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 100,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 101,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 102,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 103,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 104,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 105,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 106,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 107,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 108,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 109,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 110,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 111,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 112,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 113,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 114,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 115,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 116,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 117,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 118,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 119,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 120,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 121,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 122,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 123,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 124,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 125,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 126,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "upload-post-processing-video-128",
+      "partition": 127,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-processing",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "virtual-device-run-queue-javascript",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    }
+  ]
+}

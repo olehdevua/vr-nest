@@ -1,0 +1,9 @@
+*.tgz
+kafka*
+config/server-0.properties
+config/server-1.properties
+config/server-2.properties
+config/server-3.properties
+config/server-4.properties
+config/server-5.properties
+config/server-6.properties

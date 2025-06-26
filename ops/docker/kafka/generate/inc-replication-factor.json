@@ -1,0 +1,29 @@
+{
+  "version":1,
+  "partitions":[
+    {"topic":"public-storage-update","partition":0,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":1,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":2,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":3,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":4,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":5,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":6,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":7,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":8,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":9,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":10,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":11,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":12,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":13,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":14,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":15,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":16,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":17,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":18,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":19,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":20,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":21,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":22,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":23,"replicas":[2,3,4]}
+  ]
+}

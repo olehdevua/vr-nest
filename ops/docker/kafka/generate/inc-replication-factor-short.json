@@ -1,0 +1,7 @@
+{
+  "version":1,
+  "partitions":[
+    {"topic":"public-storage-update","partition":0,"replicas":[2,3,4]},
+    {"topic":"public-storage-update","partition":-1,"replicas":[2,3,4]}
+  ]
+}

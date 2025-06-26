@@ -1,0 +1,5189 @@
+{
+  "version": 1,
+  "partitions": [
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "oem-subscription-sender-emulator-ws-queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "pqs-updates",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-critical",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "protect-watch",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-feature-limits-update-queue",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "psp-payment-input-queue",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 0,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 1,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 2,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 3,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 4,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 5,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 6,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 7,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 8,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 9,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 10,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 11,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 12,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 13,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 14,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 15,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 16,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 17,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 18,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 19,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 20,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 21,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 22,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "public-storage-update",
+      "partition": 23,
+      "replicas": [0, 1, 2],
+      "log_dirs": ["any", "any", "any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed898a-8900-11e9-bc42-526af7764f64",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-48ed8caa-8900-11e9-bc42-526af7764f64",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-68efeb80-eadc-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-6d40b2a8-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-7417039a-eadc-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-752a3de0-aa34-11e9-a2a3-2a2ae2dbcce4",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64b4a-f29f-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-adb64e2e-f29f-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-afb69868-39bc-486d-8182-852e38fc0a08",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f5ba-eadc-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-bc93f948-eadc-11ea-adc1-0242ac120002",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "queue-name-cfc6356e-d856-43a1-8c7f-158842d65b96",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "regenerate-key-data",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-next-slice",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-cloud-triggers",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 2,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 5,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 8,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 11,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 14,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 17,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 20,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-controller",
+      "partition": 23,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 0,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 3,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 6,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 9,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 12,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 15,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 18,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 21,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-push-integration",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "scene-update",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "self-provision-mms-action",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 0,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 1,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 3,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 4,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 6,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 7,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 9,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 10,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 12,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 13,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 15,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 16,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 18,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 19,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 21,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 22,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "storage-pruning",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 1,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 2,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 4,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 5,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 7,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 8,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 10,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 11,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 13,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 14,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 16,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 17,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 19,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 20,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 22,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "toDB",
+      "partition": 23,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 0,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 1,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 2,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 3,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 4,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 5,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 6,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 7,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 8,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 9,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 10,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 11,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 12,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 13,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 14,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 15,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 16,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 17,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 18,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 19,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 20,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 21,
+      "replicas": [0],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 22,
+      "replicas": [1],
+      "log_dirs": ["any"]
+    },
+    {
+      "topic": "unassign-dispatch",
+      "partition": 23,
+      "replicas": [2],
+      "log_dirs": ["any"]
+    }
+  ]
+}
