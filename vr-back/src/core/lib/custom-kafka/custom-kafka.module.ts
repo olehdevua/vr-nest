@@ -23,7 +23,6 @@ import { CustomKafkaClient } from "./custom-kafka-client";
 export class AppModule {}
 
 import { NestFactory } from "@nestjs/core";
-import { AppModule } from "./app.module";
 import { CustomKafkaServer } from "./custom-kafka-server";
 
 async function bootstrap() {
@@ -37,4 +36,4 @@ async function bootstrap() {
   });
   await app.listen();
 }
-bootstrap();
+// bootstrap();

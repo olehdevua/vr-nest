@@ -47,5 +47,12 @@ if [ ! -d "/opt/kafka-log-files/meta.properties" ]; then
   ./bin/kafka-storage.sh format -t "$CLUSTER_ID" -c config/server.properties
 fi
 
-# Start Kafka server
-exec ./bin/kafka-server-start.sh config/server.properties
+# $0 == /usr/local/bin/docker-entrypoint.sh
+# $1 == ./bin/kafka-server-start.sh         <- exmp
+# $2 == ./config/server.properties          <- exmp
+kafka_command=$1
+kafka_properties=$2
+
+# TODO: exec su root -c "$kafka_command $kafka_properties" -- should work
+
+exec $kafka_command $kafka_properties
