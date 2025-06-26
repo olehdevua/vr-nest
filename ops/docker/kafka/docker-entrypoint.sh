@@ -33,6 +33,7 @@ done
 if [ -n "${KAFKA_ID}" ]; then
   id="${KAFKA_ID}" \
   port="9092" \
+  controller_port="9093" \
   advertised_host="${ADVERTISED_IP}" \
   process_roles="broker,controller" \
   controller_quorum_voters="${CONTROLLER_QUORUM_VOTERS}" \

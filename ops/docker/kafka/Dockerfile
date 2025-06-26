@@ -3,7 +3,7 @@ ARG download_url="https://dlcdn.apache.org/kafka/3.9.0/${kafka_dir}.tgz"
 
 #####
 
-FROM alpine:3.15 AS download_stage
+FROM alpine:3.22 AS download_stage
 
 ARG download_url
 
@@ -14,7 +14,7 @@ RUN curl -sSL "${download_url}" | tar -xzf -
 
 #####
 
-FROM azul/zulu-openjdk-alpine:17 AS run_stage
+FROM azul/zulu-openjdk-alpine:21 AS run_stage
 
 ARG kafka_dir
 
