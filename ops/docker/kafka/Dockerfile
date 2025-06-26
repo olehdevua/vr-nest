@@ -32,10 +32,4 @@ LABEL project="oleh.services"
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-# RUN for i in $(seq 0 2); do \
-#       id=${i} \
-#       port="909${i}" \
-#       adv_addr="${adv_kafka_host}:909${i}" \
-#       repl_factor=1 \
-#       envsubst < config/server-tmpl.properties > config/server-${i}.properties; \
-#     done
+
